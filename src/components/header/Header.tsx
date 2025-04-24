@@ -7,7 +7,7 @@ function Header() {
         <div className={classes.header}>
             <Container>
                 <div className={classes.headerLayout}>
-                    <Logo />
+                    <Logo redirect={true} />
                     Profile
                 </div>
             </Container>

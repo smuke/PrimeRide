@@ -1,6 +1,8 @@
 .logo {
-    width: 100%;
-    height: auto;
-    background: url(../../assets/PrimeRide.svg) no-repeat;
-    background-size: contain;
+    transition: .25s;
+}
+
+.logo:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
