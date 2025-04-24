@@ -4,11 +4,28 @@ p, h3, button {
 
 h1 {
     font-family: 'Instrument Sans';
-    margin-left: 60px;
+    display: inline;
 }
 
-.buttons{
-    margin-left: 60px;
+.search_bar {
+    display: block;
+    margin: 40px 0px 0px 40px;
+    width: 619px;
+    height: 30px;
+    font: 16px;
+    font-family: "Inter";
+    border: none;
+    border-bottom: solid 1px rgb(183, 183, 183);
+}
+
+.center_part {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 200px;
+    align-items: center;
+}
+.buttons {
+    display: inline;
 }
 
 .filter_buttons {
@@ -19,44 +36,4 @@ h1 {
     border-radius: 10px;
     height: 30px;
     width: 70px;
-}
-
-.car_list {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.car {
-    border: solid 1px rgb(183, 183, 183);
-    width: 332px;
-    height: 300px;
-    border-radius: 10px;
-    margin: 0px 15px 20px 15px;
-}
-
-.car_img {
-    width: 332px;
-    max-height: 200px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.car_title {
-    font-size: 18px;
-    margin: 10px 0px 0px 5px;
-}
-
-.car_price {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.car_distance {
-    display: inline-block;
-    margin-right: 120px;
-}
-
-.car_rating {
-    display: inline;
 }
