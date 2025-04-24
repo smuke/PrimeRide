@@ -1,4 +1,4 @@
-import Card from "../../components/header/Card";
+import Card from "../../components/Card/Card";
 import classes from "./Discover.module.css";
 
 function Discover() {
@@ -6,7 +6,7 @@ function Discover() {
         <>
             <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'></link>
             <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'></link>
-            
+
             <input className={classes.search_bar} placeholder="Enter a Location"/>
             <div className={classes.center_part}>
                 <h1>Cars available near you</h1>
