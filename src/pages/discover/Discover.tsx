@@ -16,7 +16,13 @@ function Discover() {
                 </div>
             </div>
  
-            <Card name="Car name" pricePerDay={40.0} />
+            <div className={classes.car_list}>
+                <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
+                <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
+                <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
+                <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
+            </div>
+
         </>
     )
 }
