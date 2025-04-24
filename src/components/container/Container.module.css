@@ -1,0 +1,29 @@
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 0) {
+    .layoutContainer {
+        width: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    .layoutContainer {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .layoutContainer {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .layoutContainer {
+        width: 1200px;
+    }
+}
