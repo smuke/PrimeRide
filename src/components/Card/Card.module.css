@@ -1,10 +1,12 @@
 .car_list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 40px 180px;
+    justify-content: space-between;
     align-items: center;
 }
+
 
 .car {
     border: solid 1px rgb(183, 183, 183);
@@ -12,6 +14,7 @@
     width: 332px;
     height: 290px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .car:hover {
