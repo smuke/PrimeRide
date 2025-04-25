@@ -16,6 +16,10 @@
     margin: 1em 20px;
 }
 
+.car:hover {
+    cursor: pointer;
+}
+
 .car_img {
     width: 332px;
     max-height: 200px;
