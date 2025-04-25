@@ -21,6 +21,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 40px 0px 40px 0px;
 }
 
 .buttons {
