@@ -6,11 +6,8 @@ import classes from "./Discover.module.css";
 function Discover() {
     return (
         <>
-            <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'></link>
-            <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'></link>
-
             <Header />
-            
+
             <section className={classes.section}>
                 <Container>
                     <input className={classes.search_bar} placeholder="Enter a Location"/>
