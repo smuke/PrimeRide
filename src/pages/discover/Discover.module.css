@@ -9,8 +9,7 @@ h1 {
 
 .search_bar {
     display: block;
-    margin: 40px 0px 0px 40px;
-    width: 619px;
+    width: 100%;
     height: 30px;
     font: 16px;
     font-family: "Inter";
@@ -21,9 +20,9 @@ h1 {
 .center_part {
     display: flex;
     justify-content: space-between;
-    margin: 60px 200px;
     align-items: center;
 }
+
 .buttons {
     display: inline;
 }
@@ -32,16 +31,23 @@ h1 {
     background-color: white;
     border: solid 1px rgb(183, 183, 183);
     cursor: pointer;
-    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 10px;
     height: 30px;
     width: 70px;
 }
 
 .car_list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin: 40px 180px;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.section {
+    width: 100%;
+}
+
+.example {
+    background: lightblue;
 }
