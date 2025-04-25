@@ -1,10 +1,17 @@
 import classes from "./Card.module.css";
 
-const handleCheckout = () => {
-    alert("The car rental has been bought")
+type CardProps = {
+    name: string,
+    pricePerDay: number,
+    distance: number,
+    rating: number
 }
 
-function Card (props) {
+function Card(props: CardProps) {
+    const handleCheckout = () => {
+        alert("The car rental has been bought")
+    }
+
     return (
         <>
                 <div className={classes.car} onClick={handleCheckout}>
