@@ -14,19 +14,21 @@ function Card(props: CardProps) {
 
     return (
         <>
-                <div className={classes.car} onClick={handleCheckout}>
-                    <img src="src\images\2022-nissan-versa.jpg" className={classes.car_img}></img>
+            <div className={classes.car} onClick={handleCheckout}>
+                <img src="src\images\2022-nissan-versa.jpg" className={classes.car_img}></img>
+                <div className={classes.car_details}>
                     <h3 className={classes.car_title}>{props.name}</h3>
-                    <div className={classes.car_details}>
+                    <div>
                         <p>
                             <span className={classes.car_price}>
                                 ${props.pricePerDay}/day
                             </span>
-                             • {props.distance} mi away
+                            {" "} • {props.distance} mi away
                         </p>
                         <p className={classes.car_rating}>{props.rating}</p>
                     </div>
                 </div>
+            </div>
         </>
     )
 }

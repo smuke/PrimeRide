@@ -30,20 +30,29 @@
 
 .car_title {
     font-size: 18px;
-    margin: 10px 0px 0px 10px;
+    margin: 0;
 }
 
 .car_details {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
+    flex-direction: column;
+    padding: 15px;
     box-sizing: border-box;
 }
 
+.car_details p {
+    margin: 0;
+}
+
+.car_details > div {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
 .car_price {
-    margin-right: 5px;
-    text-decoration: underline;
+    border-bottom: 1px solid black;
 }
 
 .car_rating {
