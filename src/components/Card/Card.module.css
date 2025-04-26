@@ -1,20 +1,21 @@
 .car_list {
     width: 100%;
     display: flex;
+    gap: 5px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-
 .car {
     border: solid 1px rgb(183, 183, 183);
-    flex: 0 0 332px;
-    width: 332px;
-    height: 290px;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: flex;
+    width: 300px;
+    flex-grow: 0;
+    flex-direction: column;
 }
 
 .car:hover {
@@ -22,26 +23,27 @@
 }
 
 .car_img {
-    width: 332px;
+    width: 100%;
     max-height: 200px;
     border-radius: 10px 10px 0px 0px;
 }
 
 .car_title {
     font-size: 18px;
-    margin: 10px 0px 0px 5px;
+    margin: 10px 0px 0px 10px;
+}
+
+.car_details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .car_price {
-    display: inline-block;
     margin-right: 5px;
-    margin-left: 5px;
     text-decoration: underline;
-}
-
-.car_distance {
-    display: inline-block;
-    margin-right: 120px;
 }
 
 .car_rating {
