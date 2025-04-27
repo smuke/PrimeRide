@@ -3,8 +3,7 @@ import Container from "../../components/container/Container";
 import Card from "../../components/card/Card";
 import classes from "./Profile.module.css";
 
-function Profile () {
-
+function Profile() {
     return (
         <>
             <Header />
