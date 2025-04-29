@@ -4,6 +4,14 @@ body {
     padding: 0;
 }
 
+p, h3, button {
+    font-family: 'Inter';
+}
+
+h1 {
+    font-family: 'Instrument Sans';
+}
+
 /* :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;

@@ -1,0 +1,54 @@
+
+
+input {
+    height: 39px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: solid 1px rgb(183, 183, 183);
+    padding-left: 10px;
+    font-family: "Inter";
+}
+
+.loginGrid {
+    display: flex;
+    align-items: center;
+}
+
+.imgSide {
+    background-image: url(login-img.png);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+}
+
+.textSide {
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+}
+
+.loginText {
+    margin-bottom: 40px;
+}
+
+.input {
+    padding-bottom: 10px;
+}
+
+.loginButton {
+    font-family: "Inter";
+    font-size: 16px;
+    color: white;
+    background-color: rgb(17, 83, 224);
+    border: none;
+    border-radius: 10px;
+    width: 90px;
+    height: 39px;
+    margin-top: 10px;
+}
+
+.loginButton:hover {
+    cursor: pointer;
+}
+
