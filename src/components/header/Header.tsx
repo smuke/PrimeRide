@@ -1,13 +1,13 @@
 import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
-import classes from "./Header.module.css";
+import styles from "./Header.module.css";
 import { NavLink } from "react-router";
 
 function Header() {
     return (
-        <div className={classes.header}>
+        <div className={styles.header}>
             <Container>
-                <div className={classes.headerLayout}>
+                <div className={styles.headerLayout}>
                     <Logo redirect={true} />
                     <NavLink to={"/profile"}>
                         <p>Profile</p>

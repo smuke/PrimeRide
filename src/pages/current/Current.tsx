@@ -1,4 +1,4 @@
-import classes from "./Current.module.css";
+import styles from "./Current.module.css";
 import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 import Card from "../../components/Card/Card";

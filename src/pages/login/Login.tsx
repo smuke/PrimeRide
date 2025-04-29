@@ -1,27 +1,27 @@
-import classes from "./Login.module.css";
+import styles from "./Login.module.css";
 import Logo from "../../components/Logo/Logo";
 
 function Login() {
     return (
         <>
-            <div className={classes.loginGrid}>
+            <div className={styles.loginGrid}>
 
-                <div className={classes.imgSide}>
-                    {/* <img src="src\images\login-img.png" className={classes.loginImg}></img> */}
+                <div className={styles.imgSide}>
+                    {/* <img src="src\images\login-img.png" className={styles.loginImg}></img> */}
                 </div>
-                <div className={classes.textSide}>
-                    <div className={classes.logoSection}>
+                <div className={styles.textSide}>
+                    <div className={styles.logoSection}>
                         <Logo/>
                     </div>
                     <h1>Welcome Back</h1>
-                    <p className={classes.loginText}>Log in to access your account</p>
-                    <div className={classes.input}>
+                    <p className={styles.loginText}>Log in to access your account</p>
+                    <div className={styles.input}>
                         <input placeholder="Email Address"/>
                     </div>
-                    <div className={classes.input}>
+                    <div className={styles.input}>
                         <input placeholder="Password"/>
                     </div>
-                    <button className={classes.loginButton}>Log in</button>
+                    <button className={styles.loginButton}>Log in</button>
                 </div>
             </div>
         </>
