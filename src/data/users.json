@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d",
+        "name": "John Doe",
+        "rating": 4.8,
+        "trip_count": 45,
+        "join_date": "2022-05-15"
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d",
+        "name": "Jane Smith",
+        "rating": 4.5,
+        "trip_count": 30,
+        "join_date": "2021-08-10"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "user_id": 1,
+        "star_rating": 5,
+        "message": "Great experience! The car was clean and ready to go. Highly recommend."
+    },
+    {
+        "user_id": 1,
+        "star_rating": 4,
+        "message": "The vehicle was nice, but I had some issues with the GPS system. Otherwise, everything was perfect."
+    },
+    {
+        "user_id": 2,
+        "star_rating": 5,
+        "message": "Amazing service! The owner was very responsive and the car was top-notch."
+    }
+]
