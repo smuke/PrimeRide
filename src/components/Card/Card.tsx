@@ -5,6 +5,7 @@ type CardProps = {
     pricePerDay: number,
     distance: number,
     rating: number
+    image: string
 }
 
 function Card(props: CardProps) {
@@ -15,7 +16,7 @@ function Card(props: CardProps) {
     return (
         <>
             <div className={styles.car} onClick={handleCheckout}>
-                <img src="src\images\2022-nissan-versa.jpg" className={styles.car_img}></img>
+                <img src={props.image} className={styles.car_img}></img>
                 <div className={styles.car_details}>
                     <h3 className={styles.car_title}>{props.name}</h3>
                     <div>

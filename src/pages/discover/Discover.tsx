@@ -3,6 +3,7 @@ import Container from "../../components/Container/Container";
 import Card from "../../components/Card/Card";
 import styles from "./Discover.module.css";
 import LocationInput from "../../components/LocationInput/LocationInput";
+import vehicles from "../../data/vehicles.json";
 
 function Discover() {
     return (
@@ -26,10 +27,15 @@ function Discover() {
                         </div>
                     </div>
                     <div className={styles.car_list}>
-                        <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
-                        <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
-                        <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
-                        <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
+                        {vehicles?.map((vehicle) => (
+                            <Card
+                                name={vehicle.car_title}
+                                pricePerDay={vehicle.cost_per_day}
+                                distance={3.2}
+                                rating={4.9}
+                                image={vehicle.images[0]}
+                            />
+                        ))}
                     </div>
                 </Container>
             </section>

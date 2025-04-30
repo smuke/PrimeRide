@@ -23,9 +23,10 @@
 }
 
 .car_img {
-    width: 100%;
+    width: auto;
     max-height: 200px;
     border-radius: 10px 10px 0px 0px;
+    aspect-ratio: 1;
 }
 
 .car_title {
@@ -52,7 +53,7 @@
 }
 
 .car_price {
-    border-bottom: 1px solid black;
+    border-bottom: 1px dotted black;
 }
 
 .car_rating {
