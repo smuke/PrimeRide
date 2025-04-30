@@ -1,0 +1,120 @@
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: 180px;
+    box-sizing: border-box;
+    border: 1px solid #B7B7B7;
+    padding: 16px;
+    border-radius: 10px;
+
+    .searchField {
+        width: 100%;
+    }
+
+    .menu {
+        flex: 1;
+        overflow: auto;
+    }
+
+    .label {
+        margin-bottom: 0.5em;
+    }
+}
+
+.searchField {
+    display: grid;
+    grid-template-areas:
+        "label label"
+        "input button"
+        "help  help";
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    width: fit-content;
+    color: var(--text-color);
+
+    input {
+        grid-area: input;
+        width: 100%;
+        padding: 0.286rem 1.714rem 0.286rem 0.286rem;
+        margin: 0;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        background: var(--field-background);
+        font-size: 1.143rem;
+        color: var(--field-text-color);
+        outline: none;
+
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        &::placeholder {
+            color: var(--text-color-placeholder);
+            opacity: 1;
+        }
+
+        &[data-focused] {
+            outline: 2px solid var(--focus-ring-color);
+            outline-offset: -1px;
+        }
+    }
+
+    button {
+        grid-area: button;
+        width: 1.143rem;
+        height: 1.143rem;
+        border-radius: 1.143rem;
+        margin-left: -1.429rem;
+        font-size: 0.857rem;
+        line-height: 0.857rem;
+        vertical-align: middle;
+        text-align: center;
+        background: var(--gray-500);
+        color: var(--gray-50);
+        border: none;
+        padding: 0;
+
+        &[data-pressed] {
+            background: var(--gray-600);
+        }
+    }
+
+    &[data-empty] button {
+        display: none;
+    }
+}
+
+.menu {
+    max-height: inherit;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 2px;
+    min-width: 150px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+.menuItem {
+    margin: 2px;
+    padding: 0.286rem 0.571rem;
+    border-radius: 6px;
+    outline: none;
+    cursor: default;
+    color: var(--text-color);
+    font-size: 1.072rem;
+    position: relative;
+    display: grid;
+    grid-template-areas: "label kbd"
+                        "desc  kbd";
+    align-items: center;
+    column-gap: 20px;
+    forced-color-adjust: none;
+  
+    &[data-focused] {
+      background: #1153E0;
+      color: white;
+    }
+}

@@ -11,7 +11,8 @@ function Discover() {
 
             <section className={styles.section}>
                 <Container>
-                    <input className={styles.search_bar} placeholder="Enter a Location"/>
+                    {/* <input className={styles.search_bar} placeholder="Enter a Location"/> */}
+                    <LocationInput />
                 </Container>
             </section>
 
