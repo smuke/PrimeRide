@@ -1,6 +1,7 @@
 [
     {
-        "user_id": 1,
+        "vehicle_id": 1,
+        "owner_id": 1,
         "car_title": "2021 Tesla Model 3",
         "car_year": 2021,
         "images": [
@@ -8,10 +9,12 @@
         ],
         "location": "San Francisco, CA",
         "cost_per_day": 120,
-        "vehicle_type": "Electric"
+        "vehicle_type": "sedan",
+        "fuel_type": "electric"
     },
     {
-        "user_id": 2,
+        "vehicle_id": 2,
+        "owner_id": 2,
         "car_title": "2019 Honda Civic",
         "car_year": 2019,
         "images": [
@@ -19,6 +22,20 @@
         ],
         "location": "Los Angeles, CA",
         "cost_per_day": 50,
-        "vehicle_type": "Sedan"
+        "vehicle_type": "sedan",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 3,
+        "owner_id": 2,
+        "car_title": "2024 Hyundai Sonata",
+        "car_year": 2024,
+        "images": [
+            "https://cimg0.ibsrv.net/ibimg/hgm/1626x915-1/100/947/2024-hyundai-sonata_100947620.jpg"
+        ],
+        "location": "Fullerton, CA",
+        "cost_per_day": 70,
+        "vehicle_type": "sedan",
+        "fuel_type": "hybrid"
     }
 ]
