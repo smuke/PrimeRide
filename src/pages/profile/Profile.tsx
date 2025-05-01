@@ -2,8 +2,17 @@ import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 import Card from "../../components/Card/Card";
 import styles from "./Profile.module.css";
+import UserContext from "../../context/UserContext";
+import users from "../../data/users.json";
+import vehicles from "../../data/vehicles.json";
+import { useContext, useEffect, version } from "react";
 
 function Profile() {
+    const userId = useContext(UserContext);
+    const user = users[userId];
+    const joinYear = new Date(user.join_date).getFullYear();
+    const userVehicles = vehicles.filter(vehicle => vehicle.vehicle_id === userId && vehicle.active);
+
     return (
         <>
             <Header />
@@ -11,9 +20,9 @@ function Profile() {
                 <div className={styles.profileInfo}>
                     <img src="src\images\placeholder-img.jpg" className={styles.profileImage}></img>
                     <div className={styles.profileText}>
-                        <h3>Name</h3>
-                        <p>3 Year Member • 39 trips</p>
-                        <p>4.9</p>
+                        <h3>{user.name}</h3>
+                        <p>Joined {joinYear} • {user.trip_count} trips</p>
+                        <p>{user.rating}</p>
                     </div>
                 </div>
                 <h1>Available for Rent</h1>
@@ -22,7 +31,15 @@ function Profile() {
                     <button className={styles.filter_buttons}>Filter</button>
                     <button className={styles.filter_buttons}>Filter</button>
                 </div>
-                <Card name="2022 Nissan Versa" pricePerDay={40.0} distance={3.2} rating={4.9} />
+                {userVehicles?.map((vehicle) => (
+                    <Card
+                        name={vehicle.car_title}
+                        pricePerDay={vehicle.cost_per_day}
+                        distance={3.2}
+                        rating={user.rating}
+                        image={vehicle.images[0]}
+                    />
+                ))}
             </Container>
         </>
     )

@@ -2,6 +2,7 @@
     {
         "vehicle_id": 1,
         "owner_id": 1,
+        "active": true,
         "car_title": "2021 Tesla Model 3",
         "car_year": 2021,
         "images": [
@@ -15,6 +16,7 @@
     {
         "vehicle_id": 2,
         "owner_id": 2,
+        "active": true,
         "car_title": "2019 Honda Civic",
         "car_year": 2019,
         "images": [
@@ -28,6 +30,7 @@
     {
         "vehicle_id": 3,
         "owner_id": 2,
+        "active": true,
         "car_title": "2024 Hyundai Sonata",
         "car_year": 2024,
         "images": [
