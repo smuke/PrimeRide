@@ -1,5 +1,9 @@
 import classes from "./Login.module.css";
 import Logo from "../../components/logo/Logo";
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router";
+
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -43,24 +47,46 @@ function Login() {
     }
     return (
         <>
-            <div className={styles.loginGrid}>
+            <div className={classes.loginGrid}>
 
-                <div className={styles.imgSide}>
-                    {/* <img src="src\images\login-img.png" className={styles.loginImg}></img> */}
+                <div className={classes.imgSide}>
+                    {/* <img src="src\images\login-img.png" className={classes.loginImg}></img> */}
                 </div>
-                <div className={styles.textSide}>
-                    <div className={styles.logoSection}>
+                <div className={classes.textSide}>
+                    <div className={classes.logoSection}>
                         <Logo/>
                     </div>
                     <h1>Welcome Back</h1>
                     <p className={classes.loginText}>Log in to access your account</p>
-                    <div className={classes.input}>
-                        <input placeholder="Email Address"/>
-                    </div>
-                    <div className={classes.input}>
-                        <input placeholder="Password"/>
-                    </div>
-                    <button className={classes.loginButton}>Log in</button>
+                    <form onSubmit={handleLogin}>
+                        <div className={classes.input}>
+                        <input 
+                            type="email"
+                            placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                        </div>
+                        <div className={classes.input}>
+                        <input 
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                        </div>
+                        <button className={classes.loginButton} type="submit" disabled={loading}>
+                            {loading ? "Logging in..." : "Log in"}
+                        </button>
+                    </form>
+                    {error && (
+                            <div>{error}</div>
+                    )}
+                    {success && (
+                            <div>Login successful!</div>
+                    )}
                 </div>
             </div>
         </>
