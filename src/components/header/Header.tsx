@@ -1,7 +1,7 @@
 import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
+import UserIcon from "../UserIcon/UserIcon";
 import styles from "./Header.module.css";
-import { NavLink } from "react-router";
 
 function Header() {
     return (
@@ -9,9 +9,7 @@ function Header() {
             <Container>
                 <div className={styles.headerLayout}>
                     <Logo redirect={true} />
-                    <NavLink to={"/profile"}>
-                        <p>Profile</p>
-                    </NavLink>
+                    <UserIcon />
                 </div>
             </Container>
         </div>
