@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "city": "Los Angeles",
+        "state": "California"
+    },
+    {
+        "id": 2,
+        "city": "San Francisco",
+        "state": "California"
+    },
+    {
+        "id": 3,
+        "city": "San Diego",
+        "state": "California"
+    },
+    {
+        "id": 4,
+        "city": "Sacramento",
+        "state": "California"
+    },
+    {
+        "id": 5,
+        "city": "San Jose",
+        "state": "California"
+    },
+    {
+        "id": 6,
+        "city": "Fresno",
+        "state": "California"
+    },
+    {
+        "id": 7,
+        "city": "Oakland",
+        "state": "California"
+    },
+    {
+        "id": 8,
+        "city": "Bakersfield",
+        "state": "California"
+    },
+    {
+        "id": 9,
+        "city": "Anaheim",
+        "state": "California"
+    },
+    {
+        "id": 10,
+        "city": "Santa Barbara",
+        "state": "California"
+    }
+]

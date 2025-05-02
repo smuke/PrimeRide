@@ -1,0 +1,7 @@
+.icon {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border: solid 1px rgb(183, 183, 183);
+    border-radius: 50%;
+}

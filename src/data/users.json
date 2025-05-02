@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.pravatar.cc/200?u=a",
+        "name": "John Doe",
+        "rating": 4.8,
+        "trip_count": 45,
+        "join_date": "2022-05-15",
+        "vehicles": [1]
+    },
+    {
+        "id": 2,
+        "image": "https://i.pravatar.cc/200?u=l",
+        "name": "Jane Smith",
+        "rating": 4.5,
+        "trip_count": 30,
+        "join_date": "2021-08-10",
+        "vehicles": [2, 3]
+    }
+]

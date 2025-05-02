@@ -3,6 +3,7 @@ import Discover from "./pages/discover/Discover.tsx";
 import Login from "./pages/login/Login.tsx";
 import Current from "./pages/current/Current.tsx"
 import Profile from "./pages/profile/Profile.tsx"
+import UserContext from "./context/UserContext.ts";
 
 const router = createBrowserRouter([
     { path: "/", element: <Discover /> },
@@ -14,7 +15,9 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <RouterProvider router={router} />
+        <UserContext.Provider value={1}>
+            <RouterProvider router={router} />
+        </UserContext.Provider>
     );
 }
 

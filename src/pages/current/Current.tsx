@@ -1,7 +1,7 @@
-import classes from "./Current.module.css";
-import Header from "../../components/header/Header";
-import Container from "../../components/container/Container";
-import Card from "../../components/card/Card";
+import styles from "./Current.module.css";
+import Header from "../../components/Header/Header";
+import Container from "../../components/Container/Container";
+import Card from "../../components/Card/Card";
 
 function Current() {
     return (

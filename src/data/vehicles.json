@@ -1,0 +1,44 @@
+[
+    {
+        "vehicle_id": 1,
+        "owner_id": 1,
+        "active": true,
+        "car_title": "2021 Tesla Model 3",
+        "car_year": 2021,
+        "images": [
+            "https://di-uploads-pod5.dealerinspire.com/currentautomotive1/uploads/2019/03/Model3-Buyers-Guide.png"
+        ],
+        "location": "San Francisco, CA",
+        "cost_per_day": 120,
+        "vehicle_type": "sedan",
+        "fuel_type": "electric"
+    },
+    {
+        "vehicle_id": 2,
+        "owner_id": 2,
+        "active": true,
+        "car_title": "2019 Honda Civic",
+        "car_year": 2019,
+        "images": [
+            "https://www.cnet.com/a/img/resize/5ad5ba0e3b30db7b737df5b99ef6096791fd133f/hub/2019/05/20/206ebe75-ceca-4a48-85f9-0ee77584d676/2019-honda-civic-touring-sedan-ogi-1.jpg?auto=webp&fit=crop&height=675&width=1200"
+        ],
+        "location": "Los Angeles, CA",
+        "cost_per_day": 50,
+        "vehicle_type": "sedan",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 3,
+        "owner_id": 2,
+        "active": true,
+        "car_title": "2024 Hyundai Sonata",
+        "car_year": 2024,
+        "images": [
+            "https://cimg0.ibsrv.net/ibimg/hgm/1626x915-1/100/947/2024-hyundai-sonata_100947620.jpg"
+        ],
+        "location": "Fullerton, CA",
+        "cost_per_day": 70,
+        "vehicle_type": "sedan",
+        "fuel_type": "hybrid"
+    }
+]
