@@ -5,12 +5,15 @@ import styles from "./Profile.module.css";
 import UserContext from "../../context/UserContext";
 import users from "../../data/users.json";
 import vehicles from "../../data/vehicles.json";
-import { useContext, useEffect, version } from "react";
+import { useContext } from "react";
 
 function Profile() {
     const userId = useContext(UserContext);
-    const user = users[userId];
-    const joinYear = new Date(user.join_date).getFullYear();
+    const user = users.find(user => user.id === userId);
+
+    if (!user) return <p>User not found</p>
+
+    const joinYear = new Date(user.join_date).getFullYear()
     const userVehicles = vehicles.filter(vehicle => vehicle.vehicle_id === userId && vehicle.active);
 
     return (
@@ -18,7 +21,7 @@ function Profile() {
             <Header />
             <Container>
                 <div className={styles.profileInfo}>
-                    <img src="src\images\placeholder-img.jpg" className={styles.profileImage}></img>
+                    <img src={user.image} className={styles.profileImage}></img>
                     <div className={styles.profileText}>
                         <h3>{user.name}</h3>
                         <p>Joined {joinYear} • {user.trip_count} trips</p>
