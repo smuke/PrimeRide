@@ -2,31 +2,45 @@ import {
     Autocomplete,
     Button,
     Input,
-    Label,
     Menu,
     MenuItem,
     SearchField,
     useFilter,
 } from "react-aria-components";
 
+import { useState } from "react";
 import styles from "./LocationInput.module.css";
+import locations from "../../data/locations.json";
 
-function LocationInput() {
-    let { contains } = useFilter({ sensitivity: "base" });
+function LocationInput({ updateLocation }: any) {;
+    const { contains } = useFilter({ sensitivity: 'base' });
+    const [input, setInput] = useState("");
+
+    const handleInput = (e: any) => {
+        setInput(e.target.value);
+    }
+
+    const handleSelect = (id: any) => {
+        updateLocation(id);
+    }
 
     return (
-        <div className={styles.autocomplete}>
+        <div
+            className={`${styles.autocomplete} ${
+                input ? styles.expanded : ""
+            }`}
+        >
             <Autocomplete filter={contains}>
                 <SearchField className={styles.searchField}>
-                    <Input placeholder="Enter a Location..." />
-                    <Button>✕</Button>
+                    <Input 
+                        placeholder="Enter a Location..." 
+                        value={input} 
+                        onChange={handleInput} 
+                    />
+                    <Button onClick={() => setInput("")}>✕</Button>
                 </SearchField>
-                <Menu className={styles.menu}>
-                    <MenuItem className={styles.menuItem}>Los Angeles, California</MenuItem>
-                    <MenuItem className={styles.menuItem}>Fullerton, California</MenuItem>
-                    <MenuItem className={styles.menuItem}>Anaheim, California</MenuItem>
-                    <MenuItem className={styles.menuItem}>Sacramento, California</MenuItem>
-                    <MenuItem className={styles.menuItem}>Phoenix, Arizona</MenuItem>
+                <Menu className={styles.menu} items={locations} onAction={handleSelect}>
+                    {(item) => <MenuItem className={styles.menuItem}>{item.city}, {item.state}</MenuItem>}
                 </Menu>
             </Autocomplete>
         </div>
