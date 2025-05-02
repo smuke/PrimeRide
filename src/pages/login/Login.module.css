@@ -25,7 +25,10 @@ input {
 .textSide {
     width: 100vw;
     height: 100vh;
-    align-content: center;
+    padding-left: 150px;
+}
+.logoSection {
+    margin: 100px 0px 120px 0px;
 }
 
 .loginText {
@@ -52,3 +55,25 @@ input {
     cursor: pointer;
 }
 
+.outcome {
+    font-family: "Inter";
+    width: 320px;
+    color: white;
+    margin-top: 20px;
+}
+
+.errorMsg {
+    height: 30px;
+    padding-left: 5px;
+    align-content: center;
+    background-color: rgb(255, 68, 68);
+    border-radius: 4px;
+}
+
+.successMsg {
+    height: 30px;
+    padding-left: 5px;
+    align-content: center;
+    background-color: rgb(0, 200, 80);
+    border-radius: 4px;
+}

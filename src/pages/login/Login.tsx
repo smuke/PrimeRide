@@ -33,13 +33,13 @@ function Login() {
                         nav('/');
                     }, 1000)
                 } else {
-                    setError("Login failed. Please try again")
+                    setError("Login failed. Please try again.")
                 }
             } else {
                 setError("Invalid response from the stupid api.");
             }
         } catch (err) {
-            setError("Login failed. Please try again");
+            setError("Login failed. Please try again.");
         } finally {
             setLoading(false)
         }
@@ -81,12 +81,14 @@ function Login() {
                             {loading ? "Logging in..." : "Log in"}
                         </button>
                     </form>
+                    <div className={classes.outcome}>
                     {error && (
-                            <div>{error}</div>
+                            <div className={classes.errorMsg}>{error}</div>
                     )}
                     {success && (
-                            <div>Login successful!</div>
+                            <div className={classes.successMsg}>Login successful!</div>
                     )}
+                    </div>
                 </div>
             </div>
         </>
