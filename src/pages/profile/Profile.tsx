@@ -10,6 +10,7 @@ import { useParams } from "react-router";
 import CardGrid from "../../components/CardGrid/CardGrid";
 import locations from "../../data/locations.json"
 import StarIcon from "../../components/StarIcon/StarIcon";
+import ProfileCard from "../../components/ProfileCard/ProfileCard";
 
 function Profile() {
     const { userId } = useParams();
@@ -24,17 +25,13 @@ function Profile() {
         <>
             <Header />
             <Container>
-                <div className={styles.profileInfo}>
-                    <img src={user.image} className={styles.profileImage}></img>
-                    <div className={styles.profileText}>
-                        <h3>{user.name}</h3>
-                        <p>Joined {joinYear} • {user.trip_count} trips</p>
-                        <div className={styles.userRating}>
-                            <StarIcon />
-                            <p>{user.rating}</p>
-                        </div>
-                    </div>
-                </div>
+                <ProfileCard
+                    name={user.name}
+                    image={user.image}
+                    joinYear={joinYear}
+                    tripCount={user.trip_count}
+                    rating={user.rating}
+                />
                 <div className={styles.title}>
                     <h1>Available for Rent</h1>
                 </div>

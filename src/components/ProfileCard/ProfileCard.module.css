@@ -1,0 +1,29 @@
+
+.profileCard {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    border-radius: 10px;
+    border: solid 1px rgb(183, 183, 183);
+    display: grid;
+    grid-template-columns: 200px 200px;
+    align-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 800px) {
+    .profileCard {
+        grid-template-columns: 200px;
+    }
+}
+
+.profileImage {
+    width: 144px;
+    border-radius: 77px;
+}
+
+.userRating {
+    display: flex;
+    align-items: center;
+}
