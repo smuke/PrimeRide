@@ -33,6 +33,11 @@
     height: 1px;
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
 .menuItem {
-    
+    align-self: start;
 }

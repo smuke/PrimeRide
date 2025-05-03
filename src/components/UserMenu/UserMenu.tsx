@@ -12,11 +12,11 @@ import type { MenuItemProps, SwitchProps } from "react-aria-components";
 import styles from "./UserMenu.module.css";
 import UserIcon from "../UserIcon/UserIcon";
 import { useContext } from "react";
-import UserContext from "../../context/UserContext";
+import { UserContext } from "../../context/UserContext";
 import users from "../../data/users.json"
 
 function UserMenu() {
-    const userId = useContext(UserContext);
+    const {userId} = useContext(UserContext);
     const user = users.find(user => user.id === userId);
     
     return (
@@ -33,10 +33,10 @@ function UserMenu() {
                         </div>
                     </div>
                     <Separator className={styles.separator} />
-                    <Menu className="outline-hidden">
-                        <MyMenuItem id="profile">Profile</MyMenuItem>
-                        <MyMenuItem id="current">Current Rentals</MyMenuItem>
-                        <MyMenuItem id="logout">Log Out</MyMenuItem>
+                    <Menu className={styles.menu}>
+                        <MyMenuItem id="profile" href="/profile">Profile</MyMenuItem>
+                        <MyMenuItem id="current" href="/current">Current Rentals</MyMenuItem>
+                        <MyMenuItem id="logout" href="/login">{user ? "Log Out" : "Log In"}</MyMenuItem>
                     </Menu>
                 </Popover>
             </MenuTrigger>
@@ -48,7 +48,7 @@ function MyMenuItem(props: MenuItemProps) {
     return (
         <MenuItem
             {...props}
-            className={menuItem}
+            className={styles.menuItem}
         />
     );
 }
