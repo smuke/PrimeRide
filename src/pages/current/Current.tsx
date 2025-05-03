@@ -31,6 +31,7 @@ function Current() {
                     if (!vehicle) return <p>No vehicles found.</p>
 
                     const location = locations.find(location => location.id == vehicle.location);
+                    const owner = users.find(user => user.id === vehicle.owner_id);
 
                     return (
                         <CardGrid>
@@ -41,7 +42,7 @@ function Current() {
                                 note={`Rented ${rental.rent_date}`}
                                 pricePerDay={vehicle.cost_per_day}
                                 city={location?.city}
-                                rating={user.rating}
+                                rating={owner?.rating}
                                 image={vehicle.images[0]}
                             />
                         </CardGrid>

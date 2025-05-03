@@ -7,6 +7,7 @@ import vehicles from "../../data/vehicles.json";
 import { useState } from "react";
 import locations from "../../data/locations.json"
 import CardGrid from "../../components/CardGrid/CardGrid";
+import users from "../../data/users.json"
 
 function Discover() {
     const [locationId, setLocationId] = useState<number>(1);
@@ -36,18 +37,20 @@ function Discover() {
                         </div> */}
                     </div>
                     <CardGrid>
-                        {(vehiclesFilter.length > 0) ? vehiclesFilter.map((vehicle, index) => (
-                            <Card
+                        {(vehiclesFilter.length > 0) ? vehiclesFilter.map((vehicle, index) => {
+                            const owner = users.find(user => user.id === vehicle.owner_id);
+
+                            return <Card
                                 key={index}
                                 id={vehicle.vehicle_id}
                                 name={`${vehicle.car_year} ${vehicle.car_title}`}
                                 note={`${vehicle.vehicle_type} • ${vehicle.fuel_type}`}
                                 pricePerDay={vehicle.cost_per_day}
                                 city={location?.city}
-                                rating={4.9}
+                                rating={owner?.rating}
                                 image={vehicle.images[0]}
                             />
-                        )) : <p>No vehicles found. Please try another location.</p>}
+                        }) : <p>No vehicles found. Please try another location.</p>}
                     </CardGrid>
                 </Container>
             </section>

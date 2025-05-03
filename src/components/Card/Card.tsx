@@ -8,7 +8,7 @@ type CardProps = {
     note?: string,
     pricePerDay: number,
     city: string | undefined,
-    rating: number
+    rating: number | undefined,
     image: string
 }
 
