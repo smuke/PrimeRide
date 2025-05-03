@@ -40,5 +40,103 @@
         "cost_per_day": 70,
         "vehicle_type": "sedan",
         "fuel_type": "hybrid"
+    },
+    {
+        "vehicle_id": 4,
+        "owner_id": 1,
+        "active": true,
+        "car_title": "2022 Toyota Corolla",
+        "car_year": 2022,
+        "images": [
+            "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2022/01/2022-Toyota-Corolla-Hybrid-7.jpg"
+        ],
+        "location": "San Francisco, CA",
+        "cost_per_day": 70,
+        "vehicle_type": "sedan",
+        "fuel_type": "hybrid"
+    },
+    {
+        "vehicle_id": 5,
+        "owner_id": 1,
+        "active": true,
+        "car_title": "2021 Buick Enclave",
+        "car_year": 2021,
+        "images": [
+            "https://di-uploads-pod36.dealerinspire.com/southernbuickgmclynnhaven1/uploads/2021/05/2021-Buick-Enclave.jpg"
+        ],
+        "location": "San Francisco, CA",
+        "cost_per_day": 140,
+        "vehicle_type": "SUV",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 6,
+        "owner_id": 1,
+        "active": true,
+        "car_title": "2020 Honda Odyssey",
+        "car_year": 2020,
+        "images": [
+            "https://images.turo.com/media/vehicle/images/cv9iCTDrRbSZrV0KYPysoQ.1200x630.jpg"
+        ],
+        "location": "San Francisco, CA",
+        "cost_per_day": 140,
+        "vehicle_type": "minivan",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 7,
+        "owner_id": 2,
+        "active": true,
+        "car_title": "2021 Jeep Grand Cherokee",
+        "car_year": 2021,
+        "images": [
+            "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2021/grand-cherokee-l-3-row/gallery/exterior/MY21-Grand-Cherokee-L-Gallery-Exterior-Feature-03-Desktop.jpg.image.1440.jpg"
+        ],
+        "location": "Los Angeles, CA",
+        "cost_per_day": 100,
+        "vehicle_type": "SUV",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 8,
+        "owner_id": 2,
+        "active": true,
+        "car_title": "2022 BMW 5 series (G30)",
+        "car_year": 2022,
+        "images": [
+            "https://redriven.com/wp-content/uploads/2022/11/BMW-5-Series-1-scaled.jpg"
+        ],
+        "location": "Los Angeles, CA",
+        "cost_per_day": 110,
+        "vehicle_type": "sedan",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 9,
+        "owner_id": 2,
+        "active": true,
+        "car_title": "2019 BMW X5",
+        "car_year": 2019,
+        "images": [
+            "https://www.edmunds.com/assets/m/bmw/x5/2019/oem/2019_bmw_x5_4dr-suv_xdrive40i_fq_oem_1_600.jpg"
+        ],
+        "location": "Fullerton, CA",
+        "cost_per_day": 115,
+        "vehicle_type": "sedan",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 10,
+        "owner_id": 2,
+        "active": true,
+        "car_title": "2018 BMW X5",
+        "car_year": 2018,
+        "images": [
+            "https://cdn.autoproyecto.com/wp-content/uploads/2017/05/Forester-Black_Ed_2018_precio_01.jpg"
+        ],
+        "location": "Fullerton, CA",
+        "cost_per_day": 100,
+        "vehicle_type": "SUV",
+        "fuel_type": "gas"
     }
 ]
