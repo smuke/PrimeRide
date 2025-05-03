@@ -39,7 +39,7 @@ function Discover() {
                             <Card
                                 key={index}
                                 name={`${vehicle.car_year} ${vehicle.car_title}`}
-                                note={vehicle.fuel_type}
+                                note={`${vehicle.vehicle_type} • ${vehicle.fuel_type}`}
                                 pricePerDay={vehicle.cost_per_day}
                                 distance={3.2}
                                 rating={4.9}

@@ -10,8 +10,8 @@
         ],
         "location": 2,
         "cost_per_day": 120,
-        "vehicle_type": "sedan",
-        "fuel_type": "electric"
+        "vehicle_type": "Sedan",
+        "fuel_type": "Electric"
     },
     {
         "vehicle_id": 2,
@@ -24,8 +24,8 @@
         ],
         "location": 1,
         "cost_per_day": 50,
-        "vehicle_type": "sedan",
-        "fuel_type": "gas"
+        "vehicle_type": "Sedan",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 3,
@@ -38,8 +38,8 @@
         ],
         "location": 11,
         "cost_per_day": 70,
-        "vehicle_type": "sedan",
-        "fuel_type": "hybrid"
+        "vehicle_type": "Sedan",
+        "fuel_type": "Hybrid"
     },
     {
         "vehicle_id": 4,
@@ -52,8 +52,8 @@
         ],
         "location": 2,
         "cost_per_day": 70,
-        "vehicle_type": "sedan",
-        "fuel_type": "hybrid"
+        "vehicle_type": "Sedan",
+        "fuel_type": "Hybrid"
     },
     {
         "vehicle_id": 5,
@@ -67,7 +67,7 @@
         "location": 2,
         "cost_per_day": 140,
         "vehicle_type": "SUV",
-        "fuel_type": "gas"
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 6,
@@ -80,8 +80,8 @@
         ],
         "location": 2,
         "cost_per_day": 140,
-        "vehicle_type": "minivan",
-        "fuel_type": "gas"
+        "vehicle_type": "Minivan",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 7,
@@ -95,7 +95,7 @@
         "location": 1,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
-        "fuel_type": "gas"
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 8,
@@ -108,8 +108,8 @@
         ],
         "location": 1,
         "cost_per_day": 110,
-        "vehicle_type": "sedan",
-        "fuel_type": "gas"
+        "vehicle_type": "Sedan",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 9,
@@ -122,8 +122,8 @@
         ],
         "location": 11,
         "cost_per_day": 115,
-        "vehicle_type": "sedan",
-        "fuel_type": "gas"
+        "vehicle_type": "Sedan",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 10,
@@ -137,7 +137,7 @@
         "location": 11,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
-        "fuel_type": "gas"
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 11,
@@ -150,8 +150,8 @@
         ],
         "location": 1,
         "cost_per_day": 50,
-        "vehicle_type": "motorcycle",
-        "fuel_type": "gas"
+        "vehicle_type": "Motorcycle",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 12,
@@ -164,8 +164,8 @@
         ],
         "location": 1,
         "cost_per_day": 120,
-        "vehicle_type": "motorcycle",
-        "fuel_type": "gas"
+        "vehicle_type": "Motorcycle",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 13,
@@ -178,8 +178,8 @@
         ],
         "location": 1,
         "cost_per_day": 40,
-        "vehicle_type": "truck",
-        "fuel_type": "gas"
+        "vehicle_type": "Truck",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 14,
@@ -192,8 +192,8 @@
         ],
         "location": 1,
         "cost_per_day": 40,
-        "vehicle_type": "motorcycle",
-        "fuel_type": "gas"
+        "vehicle_type": "Motorcycle",
+        "fuel_type": "Gasoline"
     },
     {
         "vehicle_id": 15,
@@ -206,7 +206,7 @@
         ],
         "location": 1,
         "cost_per_day": 100,
-        "vehicle_type": "suv",
-        "fuel_type": "electric"
+        "vehicle_type": "SUV",
+        "fuel_type": "Electric"
     }
 ]
