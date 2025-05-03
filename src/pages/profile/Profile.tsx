@@ -11,6 +11,7 @@ import CardGrid from "../../components/CardGrid/CardGrid";
 import locations from "../../data/locations.json"
 import StarIcon from "../../components/StarIcon/StarIcon";
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
+import Footer from "../../components/footer/Footer";
 
 function Profile() {
     const { userId } = useParams();
@@ -57,6 +58,7 @@ function Profile() {
                     })}
                 </CardGrid>
             </Container>
+            <Footer />
         </>
     )
 }
