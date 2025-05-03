@@ -1,8 +1,9 @@
 import classes from "./Login.module.css";
 import Logo from "../../components/Logo/Logo";
 import axios from "axios";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router";
+import { UserContext } from "../../context/UserContext";
 
 
 function Login() {
@@ -12,8 +13,9 @@ function Login() {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState(false);
     const nav = useNavigate()
+    const { setUserId } = useContext(UserContext);
 
-    const handleLogin = async (e: { preventDefault: () => void; }) => {
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
         setError("");
@@ -25,9 +27,11 @@ function Login() {
             console.log(response)
 
             if (response.status === 200 && response.data.length > 0) {
-                const user = response.data[0]
-                if (user.password === password) {
-                    localStorage.setItem("authToken", response.data.token)
+                const data = response.data[0]
+                if (data.password === password) {
+                    const parsedId = parseInt(data.id, 10);
+                    console.log(parsedId);
+                    setUserId(parsedId)
                     setSuccess(true);
                     setTimeout(() => {
                         nav('/');
