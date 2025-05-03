@@ -17,7 +17,6 @@
 .popover {
     background: white;
     border: 1px solid #B7B7B7;
-    position: relative;
     border-radius: 10px;
     padding: 10px;
 }
@@ -104,4 +103,6 @@
       background: #1153E0;
       color: white;
     }
+
+    cursor: pointer;
 }

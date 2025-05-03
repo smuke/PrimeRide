@@ -32,7 +32,7 @@ function UserMenu() {
                 <Button aria-label="Account" className={styles.menuButton}>
                     <UserIcon />
                 </Button>
-                <Popover className={styles.popover} crossOffset={-150}>
+                <Popover placement="bottom right" className={styles.popover}>
                     <div>
                         <UserIcon />
                         <div>
@@ -41,8 +41,8 @@ function UserMenu() {
                     </div>
                     <Separator className={styles.separator} />
                     <Menu className={styles.menu}>
-                        {user ? <MyMenuItem id="profile" onAction={() => navigate("/profile")}>Profile</MyMenuItem> : ""}
-                        {user ? <MyMenuItem id="current" onAction={() => navigate("/current")}>Current Rentals</MyMenuItem> : ""}
+                        {user ? <MyMenuItem id="profile" onAction={() => navigate(`/profile/${userId}`)}>Profile</MyMenuItem> : ""}
+                        {user ? <MyMenuItem id="current" onAction={() => navigate("/current")}>Rental History</MyMenuItem> : ""}
                         <MyMenuItem id="logout" onAction={handleLogout}>{user ? "Log Out" : "Log In"}</MyMenuItem>
                     </Menu>
                 </Popover>

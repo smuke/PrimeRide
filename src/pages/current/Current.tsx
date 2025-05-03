@@ -6,6 +6,8 @@ import { UserContext } from "../../context/UserContext";
 import { useContext } from "react";
 import users from "../../data/users.json";
 import vehicles from "../../data/vehicles.json";
+import CardGrid from "../../components/CardGrid/CardGrid";
+import locations from "../../data/locations.json"
 
 function Current() {
     const {userId} = useContext(UserContext);
@@ -20,22 +22,30 @@ function Current() {
         <div className={styles.current}>
             <Header />
             <Container>
-                <h1>Rental History</h1>
+                <div className={styles.title}>
+                    <h1>Rental History</h1>
+                </div>
                 {user.rentals?.map((rental, index) => {
-                    let vehicle = vehicles.find(vehicle => vehicle.vehicle_id == rental.vehicle_id);
+                    const vehicle = vehicles.find(vehicle => vehicle.vehicle_id == rental.vehicle_id);
 
                     if (!vehicle) return <p>No vehicles found.</p>
 
+                    const location = locations.find(location => location.id == vehicle.location);
+
                     return (
-                    <Card
-                        key={index}
-                        name={`${vehicle.car_year} ${vehicle.car_title}`}
-                        pricePerDay={vehicle.cost_per_day}
-                        distance={3.2}
-                        note={"Rented " + rental.rent_date}
-                        rating={4.9}
-                        image={vehicle.images[0]}
-                    />)
+                        <CardGrid>
+                            <Card
+                                key={index}
+                                id={vehicle.vehicle_id}
+                                name={`${vehicle.car_year} ${vehicle.car_title}`}
+                                note={`Rented ${rental.rent_date}`}
+                                pricePerDay={vehicle.cost_per_day}
+                                city={location?.city}
+                                rating={user.rating}
+                                image={vehicle.images[0]}
+                            />
+                        </CardGrid>
+                    )
                 })}
             </Container>
         </div>

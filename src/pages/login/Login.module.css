@@ -46,9 +46,9 @@ input {
     background-color: rgb(17, 83, 224);
     border: none;
     border-radius: 10px;
-    width: 90px;
-    height: 39px;
+    padding: 10px 20px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .loginButton:hover {

@@ -1,8 +1,13 @@
-.current p, h3 {
+p, h3 {
     font-family: 'Inter';
 }
 
-.current h1 {
+h1 {
     font-family: 'Instrument Sans';
     font-size: 26px;
+    margin: 0px 0px 0px 0px;
+}
+
+.title {
+    margin-bottom: 40px;
 }
