@@ -6,15 +6,19 @@ import { UserContext } from "../../context/UserContext";
 import users from "../../data/users.json";
 import vehicles from "../../data/vehicles.json";
 import { useContext } from "react";
+import { useParams } from "react-router";
+import CardGrid from "../../components/CardGrid/CardGrid";
+import locations from "../../data/locations.json"
+import StarIcon from "../../components/StarIcon/StarIcon";
 
 function Profile() {
-    const {userId} = useContext(UserContext);
-    const user = users.find(user => user.id === userId);
+    const { userId } = useParams();
+    const user = userId && users.find(user => user.id === parseInt(userId));
 
     if (!user) return <p>User not found</p>
 
     const joinYear = new Date(user.join_date).getFullYear()
-    const userVehicles = vehicles.filter(vehicle => vehicle.vehicle_id === userId && vehicle.active);
+    const userVehicles = vehicles.filter(vehicle => vehicle.vehicle_id === parseInt(userId) && vehicle.active);
 
     return (
         <>
@@ -25,24 +29,36 @@ function Profile() {
                     <div className={styles.profileText}>
                         <h3>{user.name}</h3>
                         <p>Joined {joinYear} • {user.trip_count} trips</p>
-                        <p>{user.rating}</p>
+                        <div className={styles.userRating}>
+                            <StarIcon />
+                            <p>{user.rating}</p>
+                        </div>
                     </div>
                 </div>
-                <h1>Available for Rent</h1>
-                <div className={styles.buttons}>
-                    <button className={styles.filter_buttons}>Filter</button>
-                    <button className={styles.filter_buttons}>Filter</button>
-                    <button className={styles.filter_buttons}>Filter</button>
+                <div className={styles.title}>
+                    <h1>Available for Rent</h1>
                 </div>
-                {userVehicles?.map((vehicle) => (
-                    <Card
-                        name={vehicle.car_title}
-                        pricePerDay={vehicle.cost_per_day}
-                        distance={3.2}
-                        rating={user.rating}
-                        image={vehicle.images[0]}
-                    />
-                ))}
+                {/* <div className={styles.buttons}>
+                    <button className={styles.filter_buttons}>Filter</button>
+                    <button className={styles.filter_buttons}>Filter</button>
+                    <button className={styles.filter_buttons}>Filter</button>
+                </div> */}
+                <CardGrid>
+                    {userVehicles?.map((vehicle, index) => {
+                        const location = locations.find(location => location.id == vehicle.location);
+
+                        return <Card
+                            key={index}
+                            id={vehicle.vehicle_id}
+                            name={`${vehicle.car_year} ${vehicle.car_title}`}
+                            note={`${vehicle.vehicle_type} • ${vehicle.fuel_type}`}
+                            pricePerDay={vehicle.cost_per_day}
+                            city={location?.city}
+                            rating={user.rating}
+                            image={vehicle.images[0]}
+                        />;
+                    })}
+                </CardGrid>
             </Container>
         </>
     )
