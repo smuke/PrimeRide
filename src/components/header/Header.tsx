@@ -1,5 +1,5 @@
-import Container from "../container/Container";
-import Logo from "../logo/Logo";
+import Container from "../Container/Container";
+import Logo from "../Logo/Logo";
 import UserIcon from "../UserIcon/UserIcon";
 import styles from "./Header.module.css";
 
