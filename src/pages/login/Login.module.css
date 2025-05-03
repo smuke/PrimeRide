@@ -27,6 +27,17 @@ input {
     height: 100vh;
     padding-left: 150px;
 }
+
+@media (max-width: 800px) {
+    .imgSide {
+        display: none;
+    }
+    .textSide {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
 .logoSection {
     margin: 100px 0px 120px 0px;
 }
