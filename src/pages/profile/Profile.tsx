@@ -1,14 +1,14 @@
-import Header from "../../components/Header/Header";
-import Container from "../../components/Container/Container";
+import Header from "../../components/header/Header";
+import Container from "../../components/container/Container";
 import Card from "../../components/Card/Card";
 import styles from "./Profile.module.css";
-import UserContext from "../../context/UserContext";
+import { UserContext } from "../../context/UserContext";
 import users from "../../data/users.json";
 import vehicles from "../../data/vehicles.json";
 import { useContext } from "react";
 
 function Profile() {
-    const userId = useContext(UserContext);
+    const {userId} = useContext(UserContext);
     const user = users.find(user => user.id === userId);
 
     if (!user) return <p>User not found</p>
