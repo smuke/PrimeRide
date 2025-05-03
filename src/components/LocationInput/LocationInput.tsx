@@ -1,9 +1,11 @@
 import {
     Autocomplete,
     Button,
+    DialogTrigger,
     Input,
     Menu,
     MenuItem,
+    Popover,
     SearchField,
     useFilter,
 } from "react-aria-components";
@@ -30,19 +32,27 @@ function LocationInput({ updateLocation }: any) {;
                 input ? styles.expanded : ""
             }`}
         >
-            <Autocomplete filter={contains}>
-                <SearchField className={styles.searchField}>
-                    <Input 
-                        placeholder="Enter a Location..." 
-                        value={input} 
-                        onChange={handleInput} 
-                    />
-                    <Button onClick={() => setInput("")}>✕</Button>
-                </SearchField>
-                <Menu className={styles.menu} items={locations} onAction={handleSelect}>
-                    {(item) => <MenuItem className={styles.menuItem}>{item.city}, {item.state}</MenuItem>}
-                </Menu>
-            </Autocomplete>
+
+            <DialogTrigger>
+                <Autocomplete filter={contains}>
+                    <button>
+                    <SearchField className={styles.searchField}>
+                        <Input 
+                            placeholder="Enter a Location..." 
+                            value={input} 
+                            onChange={handleInput}
+                        />
+                        <Button onClick={() => setInput("")}>✕</Button>
+                    </SearchField>
+                        
+                        </button>
+                    <Popover>
+                        <Menu className={styles.menu} items={locations} onAction={handleSelect}>
+                            {(item) => <MenuItem className={styles.menuItem}>{item.city}, {item.state}</MenuItem>}
+                        </Menu>
+                    </Popover>
+                </Autocomplete>
+            </DialogTrigger>
         </div>
     );
 }
