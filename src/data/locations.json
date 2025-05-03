@@ -48,5 +48,10 @@
         "id": 10,
         "city": "Santa Barbara",
         "state": "California"
+    },
+    {
+        "id": 11,
+        "city": "Fullerton",
+        "state": "California"
     }
 ]

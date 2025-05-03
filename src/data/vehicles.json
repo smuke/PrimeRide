@@ -3,12 +3,12 @@
         "vehicle_id": 1,
         "owner_id": 1,
         "active": true,
-        "car_title": "2021 Tesla Model 3",
+        "car_title": "Tesla Model 3",
         "car_year": 2021,
         "images": [
             "https://di-uploads-pod5.dealerinspire.com/currentautomotive1/uploads/2019/03/Model3-Buyers-Guide.png"
         ],
-        "location": "San Francisco, CA",
+        "location": 2,
         "cost_per_day": 120,
         "vehicle_type": "sedan",
         "fuel_type": "electric"
@@ -17,12 +17,12 @@
         "vehicle_id": 2,
         "owner_id": 2,
         "active": true,
-        "car_title": "2019 Honda Civic",
+        "car_title": "Honda Civic",
         "car_year": 2019,
         "images": [
             "https://www.cnet.com/a/img/resize/5ad5ba0e3b30db7b737df5b99ef6096791fd133f/hub/2019/05/20/206ebe75-ceca-4a48-85f9-0ee77584d676/2019-honda-civic-touring-sedan-ogi-1.jpg?auto=webp&fit=crop&height=675&width=1200"
         ],
-        "location": "Los Angeles, CA",
+        "location": 1,
         "cost_per_day": 50,
         "vehicle_type": "sedan",
         "fuel_type": "gas"
@@ -31,12 +31,12 @@
         "vehicle_id": 3,
         "owner_id": 2,
         "active": true,
-        "car_title": "2024 Hyundai Sonata",
+        "car_title": "Hyundai Sonata",
         "car_year": 2024,
         "images": [
             "https://cimg0.ibsrv.net/ibimg/hgm/1626x915-1/100/947/2024-hyundai-sonata_100947620.jpg"
         ],
-        "location": "Fullerton, CA",
+        "location": 11,
         "cost_per_day": 70,
         "vehicle_type": "sedan",
         "fuel_type": "hybrid"
@@ -45,12 +45,12 @@
         "vehicle_id": 4,
         "owner_id": 1,
         "active": true,
-        "car_title": "2022 Toyota Corolla",
+        "car_title": "Toyota Corolla",
         "car_year": 2022,
         "images": [
             "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2022/01/2022-Toyota-Corolla-Hybrid-7.jpg"
         ],
-        "location": "San Francisco, CA",
+        "location": 2,
         "cost_per_day": 70,
         "vehicle_type": "sedan",
         "fuel_type": "hybrid"
@@ -59,12 +59,12 @@
         "vehicle_id": 5,
         "owner_id": 1,
         "active": true,
-        "car_title": "2021 Buick Enclave",
+        "car_title": "Buick Enclave",
         "car_year": 2021,
         "images": [
             "https://di-uploads-pod36.dealerinspire.com/southernbuickgmclynnhaven1/uploads/2021/05/2021-Buick-Enclave.jpg"
         ],
-        "location": "San Francisco, CA",
+        "location": 2,
         "cost_per_day": 140,
         "vehicle_type": "SUV",
         "fuel_type": "gas"
@@ -73,12 +73,12 @@
         "vehicle_id": 6,
         "owner_id": 1,
         "active": true,
-        "car_title": "2020 Honda Odyssey",
+        "car_title": "Honda Odyssey",
         "car_year": 2020,
         "images": [
             "https://images.turo.com/media/vehicle/images/cv9iCTDrRbSZrV0KYPysoQ.1200x630.jpg"
         ],
-        "location": "San Francisco, CA",
+        "location": 2,
         "cost_per_day": 140,
         "vehicle_type": "minivan",
         "fuel_type": "gas"
@@ -87,12 +87,12 @@
         "vehicle_id": 7,
         "owner_id": 2,
         "active": true,
-        "car_title": "2021 Jeep Grand Cherokee",
+        "car_title": "Jeep Grand Cherokee",
         "car_year": 2021,
         "images": [
             "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2021/grand-cherokee-l-3-row/gallery/exterior/MY21-Grand-Cherokee-L-Gallery-Exterior-Feature-03-Desktop.jpg.image.1440.jpg"
         ],
-        "location": "Los Angeles, CA",
+        "location": 1,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
         "fuel_type": "gas"
@@ -101,12 +101,12 @@
         "vehicle_id": 8,
         "owner_id": 2,
         "active": true,
-        "car_title": "2022 BMW 5 series (G30)",
+        "car_title": "BMW 5 Series (G30)",
         "car_year": 2022,
         "images": [
             "https://redriven.com/wp-content/uploads/2022/11/BMW-5-Series-1-scaled.jpg"
         ],
-        "location": "Los Angeles, CA",
+        "location": 1,
         "cost_per_day": 110,
         "vehicle_type": "sedan",
         "fuel_type": "gas"
@@ -115,12 +115,12 @@
         "vehicle_id": 9,
         "owner_id": 2,
         "active": true,
-        "car_title": "2019 BMW X5",
+        "car_title": "BMW X5",
         "car_year": 2019,
         "images": [
             "https://www.edmunds.com/assets/m/bmw/x5/2019/oem/2019_bmw_x5_4dr-suv_xdrive40i_fq_oem_1_600.jpg"
         ],
-        "location": "Fullerton, CA",
+        "location": 11,
         "cost_per_day": 115,
         "vehicle_type": "sedan",
         "fuel_type": "gas"
@@ -129,14 +129,84 @@
         "vehicle_id": 10,
         "owner_id": 2,
         "active": true,
-        "car_title": "2018 BMW X5",
+        "car_title": "BMW X5",
         "car_year": 2018,
         "images": [
             "https://cdn.autoproyecto.com/wp-content/uploads/2017/05/Forester-Black_Ed_2018_precio_01.jpg"
         ],
-        "location": "Fullerton, CA",
+        "location": 11,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
         "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 11,
+        "owner_id": 3,
+        "active": true,
+        "car_title": "Yamaha R7",
+        "car_year": 2023,
+        "images": [
+            "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/Assets/Inventory/97/71/9771EEA0-FC8A-4513-96EC-58052FC10245.jpg"
+        ],
+        "location": 1,
+        "cost_per_day": 50,
+        "vehicle_type": "motorcycle",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 12,
+        "owner_id": 3,
+        "active": true,
+        "car_title": "BMW S1000RR",
+        "car_year": 2023,
+        "images": [
+            "https://preview.redd.it/2022-s1000rr-m-package-just-bought-yesterday-only-919-miles-v0-mtrhcwdk8sua1.jpg?width=640&crop=smart&auto=webp&s=d1c2d1bbf2063b4b955f776a282808399c565da9"
+        ],
+        "location": 1,
+        "cost_per_day": 120,
+        "vehicle_type": "motorcycle",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 13,
+        "owner_id": 3,
+        "active": true,
+        "car_title": "Ford F-150 XLT",
+        "car_year": 2022,
+        "images": [
+            "https://static.overfuel.com/photos/12/10453/image-1.webp"
+        ],
+        "location": 1,
+        "cost_per_day": 40,
+        "vehicle_type": "truck",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 14,
+        "owner_id": 3,
+        "active": true,
+        "car_title": "Kawasaki Ninja 400",
+        "car_year": 2023,
+        "images": [
+            "https://i.redd.it/3gy4yzkf6o361.jpg"
+        ],
+        "location": 1,
+        "cost_per_day": 40,
+        "vehicle_type": "motorcycle",
+        "fuel_type": "gas"
+    },
+    {
+        "vehicle_id": 15,
+        "owner_id": 4,
+        "active": true,
+        "car_title": "Tesla Model Y Performance",
+        "car_year": 2020,
+        "images": [
+            "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/da6e8a1d4896127a9d2adf83461993b45339474c/photos/KPyQd5wQ-Ke1EeMOaSz.-RH5Bb6-T.jpeg?t=162826691077"
+        ],
+        "location": 1,
+        "cost_per_day": 100,
+        "vehicle_type": "suv",
+        "fuel_type": "electric"
     }
 ]
