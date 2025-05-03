@@ -14,17 +14,16 @@ function Footer() {
     return (
         <div className={styles.footer}>
             <Container>
+            <div className={styles.line}></div>
             <Logo />
+            <p>&copy; PrimeRide</p>
                 <div className={styles.footerLayout}>
                     <div>
-                        <h3>Pages</h3>
                         <ul>
-                            <li onClick={() => navigate(`/`)}>Discover</li>
-                            <li onClick={() => navigate(`/profile/${userId}`)}>Profile</li>
-                            <li onClick={() => navigate(`/current`)}>Rental History</li>
+                            <li><a href="mailto:mail@example.com">Contact</a></li>
+                            <li onClick={() => navigate(`/login`)}>Log in</li>
                         </ul>
                     </div>
-                    <p>Contact us</p>
                 </div>
             </Container>
         </div>
