@@ -2,6 +2,7 @@ import styles from "./Card.module.css";
 
 type CardProps = {
     name: string,
+    note?: string,
     pricePerDay: number,
     distance: number,
     rating: number
@@ -19,6 +20,7 @@ function Card(props: CardProps) {
                 <img src={props.image} className={styles.car_img}></img>
                 <div className={styles.car_details}>
                     <h3 className={styles.car_title}>{props.name}</h3>
+                    <p>{props.note}</p>
                     <div>
                         <p>
                             <span className={styles.car_price}>
