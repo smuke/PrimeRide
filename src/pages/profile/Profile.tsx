@@ -19,7 +19,7 @@ function Profile() {
     if (!user) return <p>User not found</p>
 
     const joinYear = new Date(user.join_date).getFullYear()
-    const userVehicles = vehicles.filter(vehicle => vehicle.vehicle_id === parseInt(userId) && vehicle.active);
+    const userVehicles = vehicles.filter(vehicle => vehicle.owner_id === parseInt(userId) && vehicle.active);
 
     return (
         <>
