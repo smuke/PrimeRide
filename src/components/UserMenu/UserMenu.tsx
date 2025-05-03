@@ -13,11 +13,18 @@ import styles from "./UserMenu.module.css";
 import UserIcon from "../UserIcon/UserIcon";
 import { useContext } from "react";
 import { UserContext } from "../../context/UserContext";
+import { useNavigate } from "react-router-dom";
 import users from "../../data/users.json"
 
 function UserMenu() {
-    const {userId} = useContext(UserContext);
+    const {userId, setUserId} = useContext(UserContext);
     const user = users.find(user => user.id === userId);
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        setUserId(null);
+        navigate("/login");
+    }
     
     return (
         <div className={styles.userMenu}>
@@ -34,9 +41,9 @@ function UserMenu() {
                     </div>
                     <Separator className={styles.separator} />
                     <Menu className={styles.menu}>
-                        <MyMenuItem id="profile" href="/profile">Profile</MyMenuItem>
-                        <MyMenuItem id="current" href="/current">Current Rentals</MyMenuItem>
-                        <MyMenuItem id="logout" href="/login">{user ? "Log Out" : "Log In"}</MyMenuItem>
+                        {user ? <MyMenuItem id="profile" onAction={() => navigate("/profile")}>Profile</MyMenuItem> : ""}
+                        {user ? <MyMenuItem id="current" onAction={() => navigate("/current")}>Current Rentals</MyMenuItem> : ""}
+                        <MyMenuItem id="logout" onAction={handleLogout}>{user ? "Log Out" : "Log In"}</MyMenuItem>
                     </Menu>
                 </Popover>
             </MenuTrigger>

@@ -1,4 +1,5 @@
 import styles from "./Logo.module.css";
+import { Link } from "react-router-dom";
 
 interface LogoProps {
     redirect?: boolean;
@@ -6,7 +7,7 @@ interface LogoProps {
 
 function Logo({ redirect }: LogoProps) {
     return redirect ? (
-        <a href="/">
+        <Link to="/">
             <svg
                 width="158"
                 height="25"
@@ -20,7 +21,7 @@ function Logo({ redirect }: LogoProps) {
                     fill="#1153E0"
                 />
             </svg>
-        </a>
+        </Link>
     ) : (
         <svg
             width="158"
