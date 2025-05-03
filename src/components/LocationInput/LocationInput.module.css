@@ -1,43 +1,29 @@
-.autocomplete {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.select {
     width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    border: 1px solid #B7B7B7;
-    padding: 10px 15px;
+    position: relative;
     border-radius: 10px;
-
-    .searchField {
-        width: 100%;
-        transition: 1s;
-    }
-
-    .menu {
-        flex: 1;
-        overflow: auto;
-    }
-
-    .label {
-        margin-bottom: 0.5em;
-    }
 }
 
-.expanded {
-    max-height: 180px;
+.button {
+    display: flex;
+    width: 100%;
+    border: 1px solid #B7B7B7;
+    background: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popover {
+    background: white;
+    border: 1px solid #B7B7B7;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .searchField {
-    display: grid;
-    grid-template-areas:
-        "label label"
-        "input button"
-        "help  help";
-    grid-template-columns: 1fr auto;
-    align-items: center;
     width: fit-content;
-    color: var(--text-color);
 
     input {
         grid-area: input;
@@ -77,14 +63,10 @@
         line-height: 0.857rem;
         vertical-align: middle;
         text-align: center;
-        background: var(--gray-500);
-        color: var(--gray-50);
         border: none;
         padding: 0;
-
-        &[data-pressed] {
-            background: var(--gray-600);
-        }
+        background: none;
+        cursor: pointer;
     }
 
     &[data-empty] button {
