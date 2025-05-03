@@ -7,7 +7,8 @@ import { useContext } from "react";
 import users from "../../data/users.json";
 import vehicles from "../../data/vehicles.json";
 import CardGrid from "../../components/CardGrid/CardGrid";
-import locations from "../../data/locations.json"
+import locations from "../../data/locations.json";
+import Footer from "../../components/footer/Footer";
 
 function Current() {
     const {userId} = useContext(UserContext);
@@ -49,6 +50,7 @@ function Current() {
                     )
                 })}
             </Container>
+                <Footer />
         </div>
     )
 }

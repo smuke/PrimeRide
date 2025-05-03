@@ -1,4 +1,5 @@
 import Header from "../../components/Header/Header";
+import Footer from "../../components/footer/Footer";
 import Container from "../../components/Container/Container";
 import Card from "../../components/Card/Card";
 import styles from "./Discover.module.css";
@@ -54,6 +55,8 @@ function Discover() {
                     </CardGrid>
                 </Container>
             </section>
+
+            <Footer />
         </>
     )
 }

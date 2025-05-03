@@ -6,7 +6,8 @@ import vehicles from "../../data/vehicles.json";
 import locations from "../../data/locations.json"
 import StarIcon from "../../components/StarIcon/StarIcon";
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import users from "../../data/users.json"
+import users from "../../data/users.json";
+import Footer from "../../components/footer/Footer";
 
 function Vehicle() {
     const { vehicleId } = useParams();
@@ -50,6 +51,7 @@ function Vehicle() {
                     />
                 </Container>
             </section>
+            <Footer />
         </>
     )
 }
