@@ -21,6 +21,8 @@ function Footer() {
                     <div>
                         <ul>
                             <li><a href="mailto:mail@example.com">Contact</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
                             {/* <li onClick={() => navigate(`/login`)}>Log in</li> */}
                         </ul>
                     </div>
