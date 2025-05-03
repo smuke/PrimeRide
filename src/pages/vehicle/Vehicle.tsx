@@ -34,7 +34,7 @@ function Vehicle() {
                             <p>{location?.city}, {location?.state}</p>
                         </div>
                         <div className={styles.reserve}>
-                            <button className={styles.reserveButton}>Reserve Vehicle</button>
+                            <button className={styles.reserveButton} onClick={() => window.alert("Reserved")}>Reserve Vehicle</button>
                             <h1>${vehicle.cost_per_day}/day</h1>
                         </div>
                     </div>
