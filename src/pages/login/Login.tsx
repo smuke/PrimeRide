@@ -1,5 +1,5 @@
 import classes from "./Login.module.css";
-import Logo from "../../components/logo/Logo";
+import Logo from "../../components/Logo/Logo";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router";
@@ -54,7 +54,7 @@ function Login() {
                 </div>
                 <div className={classes.textSide}>
                     <div className={classes.logoSection}>
-                        <Logo/>
+                        <Logo redirect={true} />
                     </div>
                     <h1>Welcome Back</h1>
                     <p className={classes.loginText}>Log in to access your account</p>

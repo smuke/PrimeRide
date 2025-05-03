@@ -1,6 +1,7 @@
 import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
 import UserIcon from "../UserIcon/UserIcon";
+import UserMenu from "../UserMenu/UserMenu";
 import styles from "./Header.module.css";
 
 function Header() {
@@ -9,7 +10,8 @@ function Header() {
             <Container>
                 <div className={styles.headerLayout}>
                     <Logo redirect={true} />
-                    <UserIcon />
+                    <UserMenu />
+                    {/* <UserIcon /> */}
                 </div>
             </Container>
         </div>

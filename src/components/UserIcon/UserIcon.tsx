@@ -11,9 +11,7 @@ function UserIcon() {
 
     return (
         <>
-            <NavLink to={"/profile"}>
-                <div style={{backgroundImage: image}} className={styles.icon}></div>
-            </NavLink>
+            <div style={{backgroundImage: image}} className={styles.icon}></div>
         </>
     );
 }
