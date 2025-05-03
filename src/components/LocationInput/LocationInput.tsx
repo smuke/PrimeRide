@@ -31,6 +31,7 @@ function LocationInput({ updateLocation }: any) {;
     const handleSelect = (id: Key) => {
         updateLocation(id);
         setOpen(false);
+        setInput("");
     }
 
     return (
