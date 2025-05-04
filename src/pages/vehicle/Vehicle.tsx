@@ -8,6 +8,7 @@ import StarIcon from "../../components/StarIcon/StarIcon";
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import users from "../../data/users.json";
 import Footer from "../../components/footer/Footer";
+import { format } from "date-fns";
 
 function Vehicle() {
     const { vehicleId } = useParams();
@@ -18,6 +19,17 @@ function Vehicle() {
 
     const user = users.find(user => user.id === vehicle.owner_id);
     const joinYear = user && new Date(user.join_date).getFullYear()
+
+
+    const handleCheckout = async () => {
+        const currentDate = new Date();
+        const formattedDate = format(currentDate, "yyyy-MM-dd");
+        const record = [...vehicleId, formattedDate];
+        console.log(record);
+        
+
+        window.alert(vehicle.car_year + " " + vehicle.car_title + " Reserved")
+    }
 
     return (
         <>
@@ -34,7 +46,7 @@ function Vehicle() {
                             <p>{location?.city}, {location?.state}</p>
                         </div>
                         <div className={styles.reserve}>
-                            <button className={styles.reserveButton} onClick={() => window.alert("Reserved")}>Reserve Vehicle</button>
+                            <button className={styles.reserveButton} onClick={() => handleCheckout()}>Reserve Vehicle</button>
                             <h1>${vehicle.cost_per_day}/day</h1>
                         </div>
                     </div>

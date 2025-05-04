@@ -21,7 +21,8 @@
         "rating": 4.5,
         "trip_count": 30,
         "join_date": "2021-08-10",
-        "vehicles": [2, 3, 7, 8, 9, 10]
+        "vehicles": [2, 3, 7, 8, 9, 10],
+        "rentals": []
     }, 
     {
         "id": 3,
@@ -30,7 +31,8 @@
         "rating": 4.3,
         "trip_count": 29,
         "join_date": "2022-06-01",
-        "vehicles": [11, 12, 13, 14]
+        "vehicles": [11, 12, 13, 14],
+        "rentals": []
     },
     {
         "id": 4,
@@ -39,7 +41,8 @@
         "rating": 4.0,
         "trip_count": 19,
         "join_date": "2023-11-18",
-        "vehicles": [15]
+        "vehicles": [15],
+        "rentals": []
     }
 ]
 
