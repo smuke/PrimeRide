@@ -16,21 +16,21 @@
     margin: 40px 0;
 }
 
-ul {
+.footer ul {
     list-style-type: none;
     padding: 5px 0px;
 }
 
-li {
+.footer li {
     margin-top: 5px;
 }
 
-li a {
+.footer li a {
     text-decoration: none;
     color: black;
 }
 
-li:hover {
+.footer li:hover {
     cursor: pointer;
     color: rgb(45, 45, 45);
 }
