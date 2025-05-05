@@ -1,3 +1,4 @@
+import Rating from "../Rating/Rating";
 import StarIcon from "../StarIcon/StarIcon";
 import styles from "./ProfileCard.module.css"
 
@@ -8,10 +9,7 @@ function ProfileCard(props: any) {
             <div className={styles.profileText}>
                 <h3>{props.name}</h3>
                 <p>Joined {props.joinYear} • {props.tripCount} trips</p>
-                <div className={styles.userRating}>
-                    <StarIcon />
-                    <p>{props.rating}</p>
-                </div>
+                <Rating rating={props.rating} />
             </div>
         </div>
     )

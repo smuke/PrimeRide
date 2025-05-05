@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
 import StarIcon from "../StarIcon/StarIcon";
+import Rating from "../Rating/Rating";
 
 type CardProps = {
     id: number,
@@ -27,10 +28,7 @@ function Card(props: CardProps) {
                             </span>
                             {" "} • {props.city}
                         </p>
-                        <div className={styles.car_rating}>
-                            <StarIcon />
-                            <p>{props.rating}</p>
-                        </div>
+                        <Rating rating={props.rating} />
                     </div>
                 </div>
             </div>

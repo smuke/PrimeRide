@@ -48,8 +48,3 @@
 .car_price {
     border-bottom: 1px dotted black;
 }
-
-.car_rating {
-    display: flex;
-    align-items: center;
-}
