@@ -11,7 +11,8 @@
         "location": 2,
         "cost_per_day": 120,
         "vehicle_type": "Sedan",
-        "fuel_type": "Electric"
+        "fuel_type": "Electric",
+        "description": "The Tesla Model 3 is a sleek and modern electric sedan. It offers a smooth ride, cutting-edge technology, and impressive range. Perfect for eco-conscious drivers.\nSave on gas and enjoy the quiet ride!"
     },
     {
         "vehicle_id": 2,
@@ -25,7 +26,8 @@
         "location": 1,
         "cost_per_day": 50,
         "vehicle_type": "Sedan",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Honda Civic is a reliable and fuel-efficient sedan. It is ideal for city commutes or long road trips, offering comfort and practicality.\nNo smoking allowed in the car, please."
     },
     {
         "vehicle_id": 3,
@@ -39,7 +41,8 @@
         "location": 11,
         "cost_per_day": 70,
         "vehicle_type": "Sedan",
-        "fuel_type": "Hybrid"
+        "fuel_type": "Hybrid",
+        "description": "The Hyundai Sonata combines style and efficiency in a hybrid package. Its spacious interior and advanced features make it a great choice for families.\nSave on fuel with this hybrid while enjoying a smooth ride."
     },
     {
         "vehicle_id": 4,
@@ -53,7 +56,8 @@
         "location": 2,
         "cost_per_day": 70,
         "vehicle_type": "Sedan",
-        "fuel_type": "Hybrid"
+        "fuel_type": "Hybrid",
+        "description": "The Toyota Corolla is a dependable hybrid sedan. It delivers excellent fuel economy and a comfortable driving experience, perfect for daily use.\nPlease return the car clean and with a full tank of gas."
     },
     {
         "vehicle_id": 5,
@@ -67,7 +71,8 @@
         "location": 2,
         "cost_per_day": 140,
         "vehicle_type": "SUV",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Buick Enclave is a luxurious SUV with ample space for passengers and cargo. It’s perfect for family trips or group outings.\nNo pets allowed in the vehicle, thank you!"
     },
     {
         "vehicle_id": 6,
@@ -81,7 +86,8 @@
         "location": 2,
         "cost_per_day": 140,
         "vehicle_type": "Minivan",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Honda Odyssey is a versatile minivan designed for families. It offers plenty of room, advanced safety features, and a smooth ride.\nGreat for road trips with kids or large groups."
     },
     {
         "vehicle_id": 7,
@@ -95,7 +101,8 @@
         "location": 1,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Jeep Grand Cherokee is a rugged SUV built for adventure. It’s equally at home on city streets or off-road trails.\nPerfect for exploring the outdoors or a weekend getaway."
     },
     {
         "vehicle_id": 8,
@@ -109,7 +116,8 @@
         "location": 1,
         "cost_per_day": 110,
         "vehicle_type": "Sedan",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The BMW 5 Series (G30) is a premium sedan that combines luxury and performance. It’s perfect for those who appreciate refined driving experiences.\nPlease handle with care and enjoy the luxury ride."
     },
     {
         "vehicle_id": 9,
@@ -123,7 +131,8 @@
         "location": 11,
         "cost_per_day": 115,
         "vehicle_type": "Sedan",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The BMW X5 is a stylish and powerful SUV. It offers a spacious interior, advanced features, and a smooth driving experience.\nNo smoking or pets allowed in the vehicle."
     },
     {
         "vehicle_id": 10,
@@ -137,7 +146,8 @@
         "location": 11,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The BMW X5 (2018) is a versatile SUV with a focus on comfort and performance. It’s a great choice for both city and highway driving.\nPlease return the car in the same condition it was rented."
     },
     {
         "vehicle_id": 11,
@@ -151,7 +161,8 @@
         "location": 1,
         "cost_per_day": 50,
         "vehicle_type": "Motorcycle",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Yamaha R7 is a sporty motorcycle designed for thrill-seekers. Its lightweight frame and powerful engine make it a joy to ride.\nHelmet is required for safety. Enjoy the ride responsibly!"
     },
     {
         "vehicle_id": 12,
@@ -165,7 +176,8 @@
         "location": 3,
         "cost_per_day": 120,
         "vehicle_type": "Motorcycle",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The BMW S1000RR is a high-performance motorcycle built for speed enthusiasts. It features cutting-edge technology and a sleek design.\nPerfect for experienced riders looking for an adrenaline rush."
     },
     {
         "vehicle_id": 13,
@@ -179,7 +191,8 @@
         "location": 1,
         "cost_per_day": 40,
         "vehicle_type": "Truck",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Ford F-150 XLT is a reliable truck with impressive towing capacity. It’s perfect for work or outdoor adventures.\nPlease ensure the bed is cleaned after use."
     },
     {
         "vehicle_id": 14,
@@ -193,7 +206,8 @@
         "location": 1,
         "cost_per_day": 40,
         "vehicle_type": "Motorcycle",
-        "fuel_type": "Gasoline"
+        "fuel_type": "Gasoline",
+        "description": "The Kawasaki Ninja 400 is a lightweight motorcycle ideal for beginners and experienced riders alike. It offers a balance of power and agility.\nNo off-road use allowed. Please ride safely."
     },
     {
         "vehicle_id": 15,
@@ -207,6 +221,7 @@
         "location": 1,
         "cost_per_day": 100,
         "vehicle_type": "SUV",
-        "fuel_type": "Electric"
+        "fuel_type": "Electric",
+        "description": "The Tesla Model Y Performance is a cutting-edge electric SUV. It combines speed, efficiency, and advanced technology for an unparalleled driving experience.\nSave on gas and enjoy the autopilot feature for long drives!"
     }
 ]

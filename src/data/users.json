@@ -38,9 +38,9 @@
         "id": 4,
         "image": "https://i.pravatar.cc/200?img=60",
         "name": "Connor Johnson",
-        "rating": 4.0,
-        "trip_count": 19,
-        "join_date": "2023-11-18",
+        "rating": 0,
+        "trip_count": 2,
+        "join_date": "2024-11-18",
         "vehicles": [15],
         "rentals": []
     }
