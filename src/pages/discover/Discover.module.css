@@ -1,12 +1,3 @@
-p, h3, button {
-    font-family: 'Inter';
-}
-
-h1 {
-    font-family: 'Instrument Sans';
-    display: inline;
-}
-
 .search_bar {
     display: block;
     width: 100%;

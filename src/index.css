@@ -5,11 +5,14 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-p, h3, button {
+p, h2, h3, button {
     font-family: "Inter", sans-serif;
+    margin: .5rem 0;
 }
 
 h1 {
     font-family: "Instrument Sans", sans-serif;
+    font-size: 26px;
     font-weight: 500;
+    margin: 1rem 0;
 }
