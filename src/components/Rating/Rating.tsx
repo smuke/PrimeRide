@@ -8,7 +8,7 @@ type RatingProps = {
 function Rating({ rating }: RatingProps) {
     return (
         <div className={styles.rating}>
-            <StarIcon />
+            {(rating && rating >= 1) ? <StarIcon /> : <StarIcon empty={true} />}
             <p>{rating}</p>
         </div>
     );

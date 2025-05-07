@@ -9,17 +9,24 @@ import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import users from "../../data/users.json";
 import Footer from "../../components/footer/Footer";
 import { format } from "date-fns";
+import { Separator } from "react-aria-components";
+import CardGrid from "../../components/CardGrid/CardGrid";
+import Review from "../../components/Review/Review";
+import reviews from "../../data/reviews.json";
 
 function Vehicle() {
     const { vehicleId } = useParams();
     const vehicle = vehicleId && vehicles.find(vehicle => vehicle.vehicle_id == parseInt(vehicleId));
-
     if (!vehicle) return <p>Vehicle not found.</p>;
+
     const location = locations.find(location => location.id == vehicle.location);
 
     const user = users.find(user => user.id === vehicle.owner_id);
-    const joinYear = user && new Date(user.join_date).getFullYear()
+    if (!user) return <p>User not found.</p>;
 
+    const joinYear = user && new Date(user.join_date).getFullYear();
+
+    const userReviews = reviews.filter(review => review.user_id == user.id);
 
     const handleCheckout = async () => {
         const currentDate = new Date();
@@ -50,6 +57,11 @@ function Vehicle() {
                             <h1>${vehicle.cost_per_day}/day</h1>
                         </div>
                     </div>
+                    <Separator />
+                    <div style={{paddingTop: "10px"}}>
+                        <h1>Description</h1>
+                        <p>{vehicle.description.replace("\\n", "<br>")}</p>
+                    </div>
                 </Container>
             </section>
             <section className={styles.profileCard}>
@@ -61,6 +73,17 @@ function Vehicle() {
                             tripCount={user?.trip_count}
                             rating={user?.rating}
                     />
+                </Container>
+            </section>
+            <section className={styles.reviews}>
+                <Container>
+                    <h1>Reviews</h1>
+                    <div className={styles.reviewContainer} aria-label={`Rating of 3.4`}>
+                        {userReviews.length > 0 ? userReviews.map((review, index) => (
+                            <Review key={index} name={review.name} rating={review.rating} message={review.message} date={review.date} />
+                        ))
+                        : <p>Be the first one to review!</p>}
+                    </div>
                 </Container>
             </section>
             <Footer />

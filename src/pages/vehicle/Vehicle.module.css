@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border: solid 1px darkgray;
+    box-sizing: border-box;
 }
 
 .vehicleInfo {
@@ -42,4 +43,16 @@
 
 .profileCard {
     margin: 75px 0;
+}
+
+.reviewContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .reviewContainer {
+        grid-template-columns: auto;
+    }
 }
