@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { UserContext } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import users from "../../data/users.json";
+import Line from "../Line/Line";
 
 function Footer() {
     const {userId, setUserId} = useContext(UserContext);
@@ -14,7 +15,7 @@ function Footer() {
     return (
         <div className={styles.footer}>
             <Container>
-            <div className={styles.line}></div>
+            <Line />
             <Logo />
             <p>&copy; PrimeRide</p>
                 <div className={styles.footerLayout}>

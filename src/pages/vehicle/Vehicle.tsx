@@ -13,6 +13,7 @@ import { Separator } from "react-aria-components";
 import CardGrid from "../../components/CardGrid/CardGrid";
 import Review from "../../components/Review/Review";
 import reviews from "../../data/reviews.json";
+import Line from "../../components/Line/Line";
 
 function Vehicle() {
     const { vehicleId } = useParams();
@@ -57,7 +58,7 @@ function Vehicle() {
                             <h1>${vehicle.cost_per_day}/day</h1>
                         </div>
                     </div>
-                    <Separator />
+                    <Line />
                     <div style={{paddingTop: "10px"}}>
                         <h1>Description</h1>
                         <p>{vehicle.description.replace("\\n", "<br>")}</p>
@@ -82,7 +83,7 @@ function Vehicle() {
                         {userReviews.length > 0 ? userReviews.map((review, index) => (
                             <Review key={index} name={review.name} rating={review.rating} message={review.message} date={review.date} />
                         ))
-                        : <p>Be the first one to review!</p>}
+                        : <p>Be the first one to leave a review!</p>}
                     </div>
                 </Container>
             </section>
