@@ -79,7 +79,7 @@ function Vehicle() {
             <section className={styles.reviews}>
                 <Container>
                     <h1>Reviews</h1>
-                    <div className={styles.reviewContainer} aria-label={`Rating of 3.4`}>
+                    <div className={styles.reviewContainer}>
                         {userReviews.length > 0 ? userReviews.map((review, index) => (
                             <Review key={index} name={review.name} rating={review.rating} message={review.message} date={review.date} />
                         ))

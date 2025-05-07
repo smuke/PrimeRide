@@ -16,7 +16,7 @@ function Review(props: ReviewProps) {
     return (
         <div className={styles.review}>
             <p>{props.name}</p>
-            <div className={styles.rating}>
+            <div className={styles.rating} aria-label={`${stars} out of 5 stars`}>
                 {Array.from({length: stars}).map(() => <StarIcon empty={false} />)}
                 {Array.from({length: emptyStars}).map(() => <StarIcon empty={true} />)}
             </div>
