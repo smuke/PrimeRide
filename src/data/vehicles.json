@@ -21,7 +21,7 @@
         "car_title": "Honda Civic",
         "car_year": 2019,
         "images": [
-            "../vehicles/2019-honda-civic-sedan.webp"
+            "./assets/vehicles/2019-honda-civic-sedan.webp"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -51,7 +51,7 @@
         "car_title": "Toyota Corolla",
         "car_year": 2022,
         "images": [
-            "../vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
+            "./assets/vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
         ],
         "location": 2,
         "cost_per_day": 70,
