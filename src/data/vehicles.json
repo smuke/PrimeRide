@@ -6,7 +6,7 @@
         "car_title": "Tesla Model 3",
         "car_year": 2021,
         "images": [
-            "../../public/vehicles/tesla-model3.avif"
+            "/vehicles/tesla-model3.avif"
         ],
         "location": 2,
         "cost_per_day": 120,
@@ -21,7 +21,7 @@
         "car_title": "Honda Civic",
         "car_year": 2019,
         "images": [
-            "../public/vehicles/2019-honda-civic-sedan.webp"
+            "/vehicles/2019-honda-civic-sedan.webp"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -36,7 +36,7 @@
         "car_title": "Hyundai Sonata",
         "car_year": 2024,
         "images": [
-            "../public/vehicles/2024-hyundai-sonata.jpg"
+            "/vehicles/2024-hyundai-sonata.jpg"
         ],
         "location": 11,
         "cost_per_day": 70,
