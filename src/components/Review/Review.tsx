@@ -1,4 +1,3 @@
-import Rating from "../Rating/Rating";
 import StarIcon from "../StarIcon/StarIcon";
 import styles from "./Review.module.css";
 

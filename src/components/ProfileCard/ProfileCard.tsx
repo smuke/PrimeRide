@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router";
 import Rating from "../Rating/Rating";
-import StarIcon from "../StarIcon/StarIcon";
 import styles from "./ProfileCard.module.css";
 
 type ProfileCardProps = {
@@ -23,9 +22,8 @@ function ProfileCard(props: ProfileCardProps) {
 
     return (
         <div
-            className={styles.profileCard}
+            className={`${styles.profileCard} ${props.redirect ? styles.redirect : ""}`}
             onClick={props.redirect ? handleClick : undefined}
-            style={props.redirect ? { cursor: "pointer" } : undefined}
         >
             <img src={props.image} className={styles.profileImage}></img>
             <div className={styles.profileText}>

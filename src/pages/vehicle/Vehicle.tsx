@@ -28,7 +28,7 @@ function Vehicle() {
 
     const ownerReviews = reviews.filter(review => review.user_id == owner.id);
 
-    const {userId, setUserId} = useContext(UserContext);
+    const { userId } = useContext(UserContext);
     const user = users.find(user => user.id === userId);
     const navigate = useNavigate();
 

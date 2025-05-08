@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css";
-import StarIcon from "../StarIcon/StarIcon";
 import Rating from "../Rating/Rating";
 
 type CardProps = {

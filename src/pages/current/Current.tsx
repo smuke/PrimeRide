@@ -16,9 +16,6 @@ function Current() {
 
     if (!user) return <p>User not found</p>
 
-    const joinYear = new Date(user.join_date).getFullYear()
-    const userRentals = user.rentals;
-
     return (
         <div className={styles.current}>
             <Header />

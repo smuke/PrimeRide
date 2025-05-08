@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import styles from "./UserIcon.module.css";
-import { NavLink } from "react-router";
 import { UserContext } from "../../context/UserContext";
 import users from "../../data/users.json"
 

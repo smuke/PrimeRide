@@ -17,6 +17,15 @@
     }
 }
 
+.redirect {
+    cursor: pointer;
+}
+
+.redirect:hover {
+    background-color: #F6F6F6;
+    border: solid 1px darkgray;
+}
+
 .profileImage {
     width: 144px;
     border-radius: 77px;

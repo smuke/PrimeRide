@@ -2,14 +2,11 @@ import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 import Card from "../../components/Card/Card";
 import styles from "./Profile.module.css";
-import { UserContext } from "../../context/UserContext";
 import users from "../../data/users.json";
 import vehicles from "../../data/vehicles.json";
-import { useContext } from "react";
 import { useParams } from "react-router";
 import CardGrid from "../../components/CardGrid/CardGrid";
 import locations from "../../data/locations.json"
-import StarIcon from "../../components/StarIcon/StarIcon";
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import Footer from "../../components/footer/Footer";
 

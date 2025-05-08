@@ -1,14 +1,12 @@
 import {
     Button,
-    composeRenderProps,
     Menu,
     MenuItem,
     MenuTrigger,
     Popover,
     Separator,
-    Switch,
 } from "react-aria-components";
-import type { MenuItemProps, SwitchProps } from "react-aria-components";
+import type { MenuItemProps } from "react-aria-components";
 import styles from "./UserMenu.module.css";
 import UserIcon from "../UserIcon/UserIcon";
 import { useContext } from "react";
