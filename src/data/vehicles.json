@@ -6,7 +6,7 @@
         "car_title": "Tesla Model 3",
         "car_year": 2021,
         "images": [
-            "https://di-uploads-pod5.dealerinspire.com/currentautomotive1/uploads/2019/03/Model3-Buyers-Guide.png"
+            "public/vehicles/tesla-model3.avif"
         ],
         "location": 2,
         "cost_per_day": 120,
