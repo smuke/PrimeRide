@@ -1,8 +1,0 @@
-.logo {
-    transition: .25s;
-}
-
-.logo:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
