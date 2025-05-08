@@ -8,7 +8,7 @@ import { useParams } from "react-router";
 import CardGrid from "../../components/CardGrid/CardGrid";
 import locations from "../../data/locations.json"
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 function Profile() {
     const { userId } = useParams();

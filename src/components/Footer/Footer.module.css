@@ -1,0 +1,29 @@
+.footer {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footerLayout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 5px 0px;
+}
+
+.footer li {
+    margin-top: 5px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer li:hover {
+    cursor: pointer;
+    color: rgb(45, 45, 45);
+}

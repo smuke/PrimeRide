@@ -6,7 +6,7 @@ import vehicles from "../../data/vehicles.json";
 import locations from "../../data/locations.json"
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import users from "../../data/users.json";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import { format } from "date-fns";
 import Review from "../../components/Review/Review";
 import reviews from "../../data/reviews.json";
