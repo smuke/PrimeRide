@@ -6,7 +6,7 @@
         "car_title": "Tesla Model 3",
         "car_year": 2021,
         "images": [
-            "../../vehicles/tesla-model3.avif"
+            "../vehicles/tesla-model3.avif"
         ],
         "location": 2,
         "cost_per_day": 120,
