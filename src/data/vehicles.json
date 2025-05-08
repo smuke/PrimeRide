@@ -21,7 +21,7 @@
         "car_title": "Honda Civic",
         "car_year": 2019,
         "images": [
-            "/vehicles/2019-honda-civic-sedan.webp"
+            "../vehicles/2019-honda-civic-sedan.webp"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -36,7 +36,7 @@
         "car_title": "Hyundai Sonata",
         "car_year": 2024,
         "images": [
-            "/vehicles/2024-hyundai-sonata.jpg"
+            "../vehicles/2024-hyundai-sonata.jpg"
         ],
         "location": 11,
         "cost_per_day": 70,
@@ -51,7 +51,7 @@
         "car_title": "Toyota Corolla",
         "car_year": 2022,
         "images": [
-            "../public/vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
+            "../vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
         ],
         "location": 2,
         "cost_per_day": 70,
@@ -66,7 +66,7 @@
         "car_title": "Buick Enclave",
         "car_year": 2021,
         "images": [
-            "../public/vehicles/2021-Buick-Enclave.avif"
+            "../vehicles/2021-Buick-Enclave.avif"
         ],
         "location": 2,
         "cost_per_day": 140,
@@ -81,7 +81,7 @@
         "car_title": "Honda Odyssey",
         "car_year": 2020,
         "images": [
-            "../public/vehicles/2020-honda-odyssey.avif"
+            "../vehicles/2020-honda-odyssey.avif"
         ],
         "location": 2,
         "cost_per_day": 140,
@@ -96,7 +96,7 @@
         "car_title": "Jeep Grand Cherokee",
         "car_year": 2021,
         "images": [
-            "../public/vehicles/2021-Grand-Cherokee.avif"
+            "../vehicles/2021-Grand-Cherokee.avif"
         ],
         "location": 1,
         "cost_per_day": 100,
@@ -111,7 +111,7 @@
         "car_title": "BMW 5 Series (G30)",
         "car_year": 2022,
         "images": [
-            "../public/vehicles/BMW-5-Series-1-scaled.jpg.webp"
+            "../vehicles/BMW-5-Series-1-scaled.jpg.webp"
         ],
         "location": 1,
         "cost_per_day": 110,
@@ -126,7 +126,7 @@
         "car_title": "BMW X5",
         "car_year": 2019,
         "images": [
-            "../public/vehicles/2019_bmw_x5.avif"
+            "../vehicles/2019_bmw_x5.avif"
         ],
         "location": 11,
         "cost_per_day": 115,
@@ -141,7 +141,7 @@
         "car_title": "BMW X5",
         "car_year": 2018,
         "images": [
-            "../public/vehicles/2018-BMW-X5.jpg"
+            "../vehicles/2018-BMW-X5.jpg"
         ],
         "location": 11,
         "cost_per_day": 100,
@@ -156,7 +156,7 @@
         "car_title": "Yamaha R7",
         "car_year": 2023,
         "images": [
-            "../public/vehicles/2023-Yamaha-R7.jpg"
+            "../vehicles/2023-Yamaha-R7.jpg"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -171,7 +171,7 @@
         "car_title": "BMW S1000RR",
         "car_year": 2023,
         "images": [
-            "../public/vehicles/2023-BMW-S1000RR.webp"
+            "../vehicles/2023-BMW-S1000RR.webp"
         ],
         "location": 3,
         "cost_per_day": 120,
@@ -186,7 +186,7 @@
         "car_title": "Ford F-150 XLT",
         "car_year": 2022,
         "images": [
-            "../public/vehicles/2022-Ford-F-150-XLT.webp"
+            "../vehicles/2022-Ford-F-150-XLT.webp"
         ],
         "location": 1,
         "cost_per_day": 40,
@@ -201,7 +201,7 @@
         "car_title": "Kawasaki Ninja 400",
         "car_year": 2023,
         "images": [
-            "../public/vehicles/2023-Kawasaki-Ninja-400.jpg"
+            "../vehicles/2023-Kawasaki-Ninja-400.jpg"
         ],
         "location": 1,
         "cost_per_day": 40,
@@ -216,7 +216,7 @@
         "car_title": "Tesla Model Y Performance",
         "car_year": 2020,
         "images": [
-            "../public/vehicles/2020-tesla-model-y.jpeg"
+            "../vehicles/2020-tesla-model-y.jpeg"
         ],
         "location": 1,
         "cost_per_day": 100,
