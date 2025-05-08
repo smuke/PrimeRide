@@ -6,7 +6,7 @@
         "car_title": "Tesla Model 3",
         "car_year": 2021,
         "images": [
-            "../vehicles/tesla-model3.avif"
+            "../Vehicles/tesla-model3.avif"
         ],
         "location": 2,
         "cost_per_day": 120,
@@ -21,7 +21,7 @@
         "car_title": "Honda Civic",
         "car_year": 2019,
         "images": [
-            "./assets/vehicles/2019-honda-civic-sedan.webp"
+            "./Vehicles/2019-honda-civic-sedan.webp"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -36,7 +36,7 @@
         "car_title": "Hyundai Sonata",
         "car_year": 2024,
         "images": [
-            "../vehicles/2024-hyundai-sonata.jpg"
+            "./Vehicles/2024-hyundai-sonata.jpg"
         ],
         "location": 11,
         "cost_per_day": 70,
@@ -51,7 +51,7 @@
         "car_title": "Toyota Corolla",
         "car_year": 2022,
         "images": [
-            "./assets/vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
+            "./Vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
         ],
         "location": 2,
         "cost_per_day": 70,
@@ -66,7 +66,7 @@
         "car_title": "Buick Enclave",
         "car_year": 2021,
         "images": [
-            "../vehicles/2021-Buick-Enclave.avif"
+            "./Vehicles/2021-Buick-Enclave.avif"
         ],
         "location": 2,
         "cost_per_day": 140,
@@ -81,7 +81,7 @@
         "car_title": "Honda Odyssey",
         "car_year": 2020,
         "images": [
-            "../vehicles/2020-honda-odyssey.avif"
+            "./Vehicles/2020-honda-odyssey.avif"
         ],
         "location": 2,
         "cost_per_day": 140,
