@@ -6,7 +6,7 @@
         "car_title": "Tesla Model 3",
         "car_year": 2021,
         "images": [
-            "public/vehicles/tesla-model3.avif"
+            "../public/vehicles/tesla-model3.avif"
         ],
         "location": 2,
         "cost_per_day": 120,
@@ -21,7 +21,7 @@
         "car_title": "Honda Civic",
         "car_year": 2019,
         "images": [
-            "https://www.cnet.com/a/img/resize/5ad5ba0e3b30db7b737df5b99ef6096791fd133f/hub/2019/05/20/206ebe75-ceca-4a48-85f9-0ee77584d676/2019-honda-civic-touring-sedan-ogi-1.jpg?auto=webp&fit=crop&height=675&width=1200"
+            "../public/vehicles/2019-honda-civic-sedan.webp"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -36,7 +36,7 @@
         "car_title": "Hyundai Sonata",
         "car_year": 2024,
         "images": [
-            "https://cimg0.ibsrv.net/ibimg/hgm/1626x915-1/100/947/2024-hyundai-sonata_100947620.jpg"
+            "../public/vehicles/2024-hyundai-sonata.jpg"
         ],
         "location": 11,
         "cost_per_day": 70,
@@ -51,7 +51,7 @@
         "car_title": "Toyota Corolla",
         "car_year": 2022,
         "images": [
-            "https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2022/01/2022-Toyota-Corolla-Hybrid-7.jpg"
+            "../public/vehicles/2022-Toyota-Corolla-Hybrid-7.webp"
         ],
         "location": 2,
         "cost_per_day": 70,
@@ -66,7 +66,7 @@
         "car_title": "Buick Enclave",
         "car_year": 2021,
         "images": [
-            "https://di-uploads-pod36.dealerinspire.com/southernbuickgmclynnhaven1/uploads/2021/05/2021-Buick-Enclave.jpg"
+            "../public/vehicles/2021-Buick-Enclave.avif"
         ],
         "location": 2,
         "cost_per_day": 140,
@@ -81,7 +81,7 @@
         "car_title": "Honda Odyssey",
         "car_year": 2020,
         "images": [
-            "https://images.turo.com/media/vehicle/images/cv9iCTDrRbSZrV0KYPysoQ.1200x630.jpg"
+            "../public/vehicles/2020-honda-odyssey.avif"
         ],
         "location": 2,
         "cost_per_day": 140,
@@ -96,7 +96,7 @@
         "car_title": "Jeep Grand Cherokee",
         "car_year": 2021,
         "images": [
-            "https://www.jeep.com/content/dam/fca-brands/na/jeep/en_us/2021/grand-cherokee-l-3-row/gallery/exterior/MY21-Grand-Cherokee-L-Gallery-Exterior-Feature-03-Desktop.jpg.image.1440.jpg"
+            "../public/vehicles/2021-Grand-Cherokee.avif"
         ],
         "location": 1,
         "cost_per_day": 100,
@@ -111,7 +111,7 @@
         "car_title": "BMW 5 Series (G30)",
         "car_year": 2022,
         "images": [
-            "https://redriven.com/wp-content/uploads/2022/11/BMW-5-Series-1-scaled.jpg"
+            "../public/vehicles/BMW-5-Series-1-scaled.jpg.webp"
         ],
         "location": 1,
         "cost_per_day": 110,
@@ -126,7 +126,7 @@
         "car_title": "BMW X5",
         "car_year": 2019,
         "images": [
-            "https://www.edmunds.com/assets/m/bmw/x5/2019/oem/2019_bmw_x5_4dr-suv_xdrive40i_fq_oem_1_600.jpg"
+            "../public/vehicles/2019_bmw_x5.avif"
         ],
         "location": 11,
         "cost_per_day": 115,
@@ -141,7 +141,7 @@
         "car_title": "BMW X5",
         "car_year": 2018,
         "images": [
-            "https://cdn.autoproyecto.com/wp-content/uploads/2017/05/Forester-Black_Ed_2018_precio_01.jpg"
+            "../public/vehicles/2018-BMW-X5.jpg"
         ],
         "location": 11,
         "cost_per_day": 100,
@@ -156,7 +156,7 @@
         "car_title": "Yamaha R7",
         "car_year": 2023,
         "images": [
-            "https://cdn.dealerspike.com/imglib/v1/800x600/imglib/Assets/Inventory/97/71/9771EEA0-FC8A-4513-96EC-58052FC10245.jpg"
+            "../public/vehicles/2023-Yamaha-R7.jpg"
         ],
         "location": 1,
         "cost_per_day": 50,
@@ -171,7 +171,7 @@
         "car_title": "BMW S1000RR",
         "car_year": 2023,
         "images": [
-            "https://preview.redd.it/2022-s1000rr-m-package-just-bought-yesterday-only-919-miles-v0-mtrhcwdk8sua1.jpg?width=640&crop=smart&auto=webp&s=d1c2d1bbf2063b4b955f776a282808399c565da9"
+            "../public/vehicles/2023-BMW-S1000RR.webp"
         ],
         "location": 3,
         "cost_per_day": 120,
@@ -186,7 +186,7 @@
         "car_title": "Ford F-150 XLT",
         "car_year": 2022,
         "images": [
-            "https://static.overfuel.com/photos/12/10453/image-1.webp"
+            "../public/vehicles/2022-Ford-F-150-XLT.webp"
         ],
         "location": 1,
         "cost_per_day": 40,
@@ -201,7 +201,7 @@
         "car_title": "Kawasaki Ninja 400",
         "car_year": 2023,
         "images": [
-            "https://i.redd.it/3gy4yzkf6o361.jpg"
+            "../public/vehicles/2023-Kawasaki-Ninja-400.jpg"
         ],
         "location": 1,
         "cost_per_day": 40,
@@ -216,7 +216,7 @@
         "car_title": "Tesla Model Y Performance",
         "car_year": 2020,
         "images": [
-            "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/da6e8a1d4896127a9d2adf83461993b45339474c/photos/KPyQd5wQ-Ke1EeMOaSz.-RH5Bb6-T.jpeg?t=162826691077"
+            "../public/vehicles/2020-tesla-model-y.jpeg"
         ],
         "location": 1,
         "cost_per_day": 100,
