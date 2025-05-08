@@ -68,11 +68,13 @@ function Vehicle() {
             <section className={styles.profileCard}>
                 <Container>
                     <ProfileCard
-                            name={user?.name}
-                            image={user?.image}
-                            joinYear={joinYear}
-                            tripCount={user?.trip_count}
-                            rating={user?.rating}
+                        id={user.id}
+                        name={user?.name}
+                        image={user?.image}
+                        joinYear={`${joinYear}`}
+                        tripCount={user?.trip_count}
+                        rating={user?.rating}
+                        redirect={true}
                     />
                 </Container>
             </section>

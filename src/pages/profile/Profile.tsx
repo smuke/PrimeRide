@@ -27,9 +27,10 @@ function Profile() {
             <Header />
             <Container>
                 <ProfileCard
+                    id={user.id}
                     name={user.name}
                     image={user.image}
-                    joinYear={joinYear}
+                    joinYear={`${joinYear}`}
                     tripCount={user.trip_count}
                     rating={user.rating}
                 />
